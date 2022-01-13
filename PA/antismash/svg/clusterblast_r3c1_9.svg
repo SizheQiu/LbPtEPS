@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="230" width="800" viewBox="0 0 800 230" preserveAspectRatio="none"  >
+<g label="Query sequence" class="clusterblast-cluster"  >
+<text x="5" y="20" class="clusterblast-acc"  >
+Query sequence</text>
+<line x1="10" y1="35" x2="778.0" y2="35" style="stroke-width:1; stroke:grey; "  />
+<polygon points="90,40 142,40 147,35 142,30 90,30 90,40 " style="fill:#d81515; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01906&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 33 - 915" locus_tag="assembly_01906" class="clusterblast-orf" id="dummy-1_q0_0_all"  />
+<polygon points="164,35 169,30 306,30 306,40 169,40 164,35 " style="fill:#15d815; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01907&lt;/b&gt;&lt;br&gt;Lactococcin-G-processing and transport ATP-binding protein LagD&lt;br&gt;Location: 1180 - 3355" locus_tag="assembly_01907" class="clusterblast-orf" id="dummy-1_q1_0_all"  />
+<polygon points="312,35 317,30 346,30 346,40 317,40 312,35 " style="fill:#1515d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01908&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 3453 - 3978" locus_tag="assembly_01908" class="clusterblast-orf" id="dummy-1_q2_0_all"  />
+<polygon points="348,35 353,30 370,30 370,40 353,40 348,35 " style="fill:#d815d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01909&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4001 - 4340" locus_tag="assembly_01909" class="clusterblast-orf" id="dummy-1_q3_0_all"  />
+<polygon points="372,35 377,30 385,30 385,40 377,40 372,35 " style="fill:#d8d815; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01910&lt;/b&gt;&lt;br&gt;Bacteriocin pediocin PA-1&lt;br&gt;Location: 4377 - 4566" locus_tag="assembly_01910" class="clusterblast-orf" id="dummy-1_q4_0_all"  />
+<polygon points="403,35 408,30 413,30 413,40 408,40 403,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01911&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4850 - 4997" locus_tag="assembly_01911" class="clusterblast-orf" id="dummy-1_q5_0_all"  />
+<polygon points="411,35 416,30 421,30 421,40 416,40 411,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01912&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4968 - 5118" locus_tag="assembly_01912" class="clusterblast-orf" id="dummy-1_q6_0_all"  />
+<polygon points="422,35 427,30 434,30 434,40 427,40 422,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01913&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 5136 - 5322" locus_tag="assembly_01913" class="clusterblast-orf" id="dummy-1_q7_0_all"  />
+<polygon points="438,35 443,30 481,30 481,40 443,40 438,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01914&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 5391 - 6045" locus_tag="assembly_01914" class="clusterblast-orf" id="dummy-1_q8_0_all"  />
+<polygon points="491,40 543,40 548,35 543,30 491,30 491,40 " style="fill:#15d8d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01915&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 6198 - 7080" locus_tag="assembly_01915" class="clusterblast-orf" id="dummy-1_q9_0_all"  />
+<polygon points="561,40 593,40 598,35 593,30 561,30 561,40 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01916&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 7273 - 7840" locus_tag="assembly_01916" class="clusterblast-orf" id="dummy-1_q10_0_all"  />
+<polygon points="613,35 618,30 662,30 662,40 618,40 613,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01917&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 8078 - 8828" locus_tag="assembly_01917" class="clusterblast-orf" id="dummy-1_q11_0_all"  />
+<polygon points="682,40 686,40 691,35 686,30 682,30 682,40 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01918&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 9127 - 9265" locus_tag="assembly_01918" class="clusterblast-orf" id="dummy-1_q12_0_all"  />
+</g>
+<g label="NZ_LT907930" description="NZ_LT907930_c1: Lactobacillus sakei strain J18 chromosome LSAJ18, whole genom... (15% of genes show similarity), bacteriocin" class="clusterblast-cluster"  >
+<text x="5" y="70" class="clusterblast-acc"  >
+<a xlink:href="https://antismash-db.secondarymetabolites.org/go/NZ_LT907930/1" target="_blank">NZ_LT907930_c1</a>: Lactobacillus sakei strain J18 chromosome LSAJ18, whole genom... (15% of genes show similarity), bacteriocin</text>
+<line x1="10" y1="85" x2="778.0" y2="85" style="stroke-width:1; stroke:grey; "  />
+</g>
+<g id="a1_000"  >
+<polygon points="0,85 5,80 80,80 80,90 5,90 0,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02215&lt;/b&gt;&lt;br&gt;CHAP domain-containing protein&lt;br&gt;Location: 453089 - 451851" locus_tag="LSAJ18_RS02215" class="clusterblast-orf" id="dummy-1_h1_9_0"  />
+</g>
+<g id="a1_001"  >
+<polygon points="97,85 102,80 216,80 216,90 102,90 97,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02210&lt;/b&gt;&lt;br&gt;acyltransferase&lt;br&gt;Location: 451588 - 449771" locus_tag="LSAJ18_RS02210" class="clusterblast-orf" id="dummy-1_h1_9_1"  />
+</g>
+<g id="a1_002"  >
+<polygon points="214,85 219,80 240,80 240,90 219,90 214,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02205&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 449799 - 449401" locus_tag="LSAJ18_RS02205" class="clusterblast-orf" id="dummy-1_h1_9_2"  />
+</g>
+<g id="a1_003"  >
+<polygon points="272,85 277,80 309,80 309,90 277,90 272,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02200&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 448903 - 448340" locus_tag="LSAJ18_RS02200" class="clusterblast-orf" id="dummy-1_h1_9_3"  />
+</g>
+<g id="a1_004"  >
+<polygon points="310,85 315,80 450,80 450,90 315,90 310,85 " style="fill:#15d815; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02195&lt;/b&gt;&lt;br&gt;peptide ABC transporter ATP-binding protein&lt;br&gt;Location: 448325 - 446169&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01907&lt;/b&gt;&lt;br&gt;Percentage identity: 54&lt;br&gt;Percentage coverage: 99&lt;br&gt;BLAST bit score: 744&lt;br&gt;E-value: 1.3e-212" locus_tag="LSAJ18_RS02195" class="clusterblast-orf" id="dummy-1_h1_9_4"  />
+</g>
+<g id="a1_005"  >
+<polygon points="473,85 478,80 492,80 492,90 478,90 473,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02190&lt;/b&gt;&lt;br&gt;bacteriocin immunity protein&lt;br&gt;Location: 445818 - 445522" locus_tag="LSAJ18_RS02190" class="clusterblast-orf" id="dummy-1_h1_9_5"  />
+</g>
+<g id="a1_006"  >
+<polygon points="498,85 503,80 510,80 510,90 503,90 498,85 " style="fill:#d8d815; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02185&lt;/b&gt;&lt;br&gt;bacteriocin sakacin-P&lt;br&gt;Location: 445428 - 445243&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01910&lt;/b&gt;&lt;br&gt;Percentage identity: 61&lt;br&gt;Percentage coverage: 98&lt;br&gt;BLAST bit score: 78&lt;br&gt;E-value: 3.3e-13" locus_tag="LSAJ18_RS02185" class="clusterblast-orf" id="dummy-1_h1_9_6"  />
+</g>
+<g id="a1_007"  >
+<polygon points="520,85 525,80 568,80 568,90 525,90 520,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02180&lt;/b&gt;&lt;br&gt;DNA-binding response regulator&lt;br&gt;Location: 445096 - 444350" locus_tag="LSAJ18_RS02180" class="clusterblast-orf" id="dummy-1_h1_9_7"  />
+</g>
+<g id="a1_008"  >
+<polygon points="569,85 574,80 624,80 624,90 574,90 569,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02175&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 444348 - 443494" locus_tag="LSAJ18_RS02175" class="clusterblast-orf" id="dummy-1_h1_9_8"  />
+</g>
+<g id="a1_009"  >
+<polygon points="677,85 682,80 684,80 684,90 682,90 677,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02170&lt;/b&gt;&lt;br&gt;bacteriocin&lt;br&gt;Location: 442684 - 442571" locus_tag="LSAJ18_RS02170" class="clusterblast-orf" id="dummy-1_h1_9_9"  />
+</g>
+<g id="a1_0010"  >
+<polygon points="696,90 713,90 718,85 713,80 696,80 696,90 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02165&lt;/b&gt;&lt;br&gt;bacteriocin immunity protein&lt;br&gt;Location: 442394 - 442047" locus_tag="LSAJ18_RS02165" class="clusterblast-orf" id="dummy-1_h1_9_10"  />
+</g>
+<g id="a1_0011"  >
+<polygon points="722,85 727,80 749,80 749,90 727,90 722,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02160&lt;/b&gt;&lt;br&gt;DUF3021 domain-containing protein&lt;br&gt;Location: 441986 - 441579" locus_tag="LSAJ18_RS02160" class="clusterblast-orf" id="dummy-1_h1_9_11"  />
+</g>
+<g id="a1_0012"  >
+<polygon points="749,85 754,80 780,80 780,90 754,90 749,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;LSAJ18_RS02155&lt;/b&gt;&lt;br&gt;LytTR family transcriptional regulator&lt;br&gt;Location: 441573 - 441109" locus_tag="LSAJ18_RS02155" class="clusterblast-orf" id="dummy-1_h1_9_12"  />
+</g>
+</svg>

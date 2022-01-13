@@ -1,0 +1,50 @@
+medium	description	compound	name
+DMEM	DMEM	ala__L	L-Alanine
+DMEM	DMEM	arg__L	L-Arginine
+DMEM	DMEM	asn__L	L-Asparagine
+DMEM	DMEM	asp__L	Ala L asp L C7H11N2O5
+DMEM	DMEM	cys__L	L-Cysteine
+DMEM	DMEM	gln__L	L-Glutamine
+DMEM	DMEM	glu__L	Ala L glu L C8H13N2O5
+DMEM	DMEM	gly	2-Phosphoglycolate
+DMEM	DMEM	his__L	L-Histidine
+DMEM	DMEM	ile__L	L-Isoleucine
+DMEM	DMEM	leu__L	L-Leucine
+DMEM	DMEM	lys__L	L-Lysine
+DMEM	DMEM	met__L	L-Methionine
+DMEM	DMEM	phe__L	L-Phenylalanine
+DMEM	DMEM	pro__L	Gly pro L C7H12N2O3
+DMEM	DMEM	ser__L	O-Phospho-L-serine
+DMEM	DMEM	thr__L	Ala-L-Thr-L
+DMEM	DMEM	trp__L	L-Tryptophan
+DMEM	DMEM	tyr__L	L-Tyrosine
+DMEM	DMEM	val__L	L-Valine
+DMEM	DMEM	glc__D	D-Glucose
+DMEM	DMEM	pyr	1-Pyrroline-5-carboxylate
+DMEM	DMEM	ca2	Calcium
+DMEM	DMEM	chol	Choline C5H14NO
+DMEM	DMEM	cl	Chloride
+DMEM	DMEM	cobalt2	Co2+
+DMEM	DMEM	cu2	Copper
+DMEM	DMEM	fe2	Fe2+ mitochondria
+DMEM	DMEM	fe3	Iron (Fe3+)
+DMEM	DMEM	fol	Folate
+DMEM	DMEM	k	3-Dehydroshikimate
+DMEM	DMEM	h2o	Hydrogen peroxide
+DMEM	DMEM	h2s	Hydrogen sulfide
+DMEM	DMEM	inost	Myo-Inositol
+DMEM	DMEM	mg2	Magnesium
+DMEM	DMEM	mn2	Manganese
+DMEM	DMEM	ncam	Nicotinamide
+DMEM	DMEM	pi	Butanoyl phosphate
+DMEM	DMEM	pnto_R	pnto_R
+DMEM	DMEM	pydxn	Pyridoxine
+DMEM	DMEM	ribflv	Riboflavin C17H20N4O6
+DMEM	DMEM	so4	Sulfate
+DMEM	DMEM	thm	Hydroxy ethyl Thiamin diphosphate
+DMEM	DMEM	zn2	Zinc
+DMEM	DMEM	mqn7	Menaquinone 7 C46H64O2
+DMEM	DMEM	mqn8	Menaquinone 8
+DMEM	DMEM	pheme	Protoheme C34H30FeN4O4
+DMEM	DMEM	q8	2-Demethylmenaquinone 8
+DMEM	DMEM	sheme	Siroheme C42H36FeN4O16

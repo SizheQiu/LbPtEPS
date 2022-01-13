@@ -1,0 +1,866 @@
+ClusterBlast scores for assembly_3
+
+Table of genes, locations, strands and annotations of query cluster:
+assembly_01906	33	915	+	hypothetical protein	
+assembly_01907	1180	3355	-	Lactococcin-G-processing and transport ATP-binding protein LagD	
+assembly_01908	3453	3978	-	hypothetical protein	
+assembly_01909	4001	4340	-	hypothetical protein	
+assembly_01910	4377	4566	-	Bacteriocin pediocin PA-1	
+assembly_01911	4850	4997	-	hypothetical protein	
+assembly_01912	4968	5118	-	hypothetical protein	
+assembly_01913	5136	5322	-	hypothetical protein	
+assembly_01914	5391	6045	-	hypothetical protein	
+assembly_01915	6198	7080	+	hypothetical protein	
+assembly_01916	7273	7840	+	hypothetical protein	
+assembly_01917	8078	8828	-	hypothetical protein	
+assembly_01918	9127	9265	+	hypothetical protein	
+
+
+Significant hits: 
+1. NZ_KB889550	Pediococcus acidilactici D3 PAD3_scaffold1, whole genome shotgun sequence
+2. NZ_CP021998	Lactobacillus plantarum strain LPL-1 plasmid pPLP-1, complete sequence
+3. NZ_AZDX01000066	Lactobacillus hordei DSM 19519 Scaffold66, whole genome shotgun sequence
+4. NZ_JHXK01000054	Clostridium beijerinckii HUN142 T483DRAFT_scaffold00045.45_C, whole genome shotgun sequence
+5. NZ_LT960778	Lactobacillus sakei strain FLEC01 genome assembly, plasmid: 2
+6. NZ_AYYI01000042	Lactobacillus rennini DSM 20253 NODE_44, whole genome shotgun sequence
+7. NC_008525	Pediococcus pentosaceus ATCC 25745, complete genome
+8. NZ_AZDX01000051	Lactobacillus hordei DSM 19519 Scaffold51, whole genome shotgun sequence
+9. NZ_LT907930	Lactobacillus sakei strain J18 chromosome LSAJ18, whole genome shotgun sequence
+10. NZ_AZDO01000025	Lactobacillus futsaii JCM 17355 NODE_32, whole genome shotgun sequence
+11. NZ_LT960790	Lactobacillus sakei strain J54 genome assembly, chromosome: 1
+12. NZ_ASWD01000004	Enterococcus pallens ATCC BAA-351 acOtw-supercont2.4, whole genome shotgun sequence
+13. NZ_ASWD01000004	Enterococcus pallens ATCC BAA-351 acOtw-supercont2.4, whole genome shotgun sequence
+14. NZ_FMZD01000004	Marinilactibacillus psychrotolerans strain DSM 19582, whole genome shotgun sequence
+15. NZ_KB946796	Enterococcus faecium EnGen0308 acNbm-supercont1.13, whole genome shotgun sequence
+16. NZ_KB947661	Enterococcus faecium EnGen0164 strain UAA721 acAqK-supercont1.14, whole genome shotgun sequence
+17. NZ_KB932697	Enterococcus faecium EnGen0138 strain 9830091-5 acHWZ-supercont1.5, whole genome shotgun sequence
+18. NZ_LOHT01000323	Enterococcus faecium strain LMG 8148 contig_5_1, whole genome shotgun sequence
+19. NZ_KB947584	Enterococcus faecium EnGen0160 strain UAA716 acAqF-supercont1.9, whole genome shotgun sequence
+20. NZ_KB029482	Enterococcus faecium EnGen0019 strain E0680 acrtE-supercont1.3, whole genome shotgun sequence
+21. NZ_KB949486	Enterococcus faecium EnGen0191 strain HM1073 acEPF-supercont1.4, whole genome shotgun sequence
+22. NZ_LKPG01000034	Enterococcus faecium strain IQ110 Contig4, whole genome shotgun sequence
+23. NZ_GG688438	Enterococcus faecium 1,231,501 supercont1.3, whole genome shotgun sequence
+24. NZ_LN999844	Enterococcus faecium isolate EFE10021 genome assembly, chromosome: chr
+25. NZ_KB946097	Enterococcus faecium EnGen0263 strain UAA1280 acvJW-supercont1.2, whole genome shotgun sequence
+26. NZ_JH813183	Enterococcus faecium 505 Scfld346, whole genome shotgun sequence
+27. NZ_FRDY01000002	Enterococcus faecium isolate Hp_5-10, whole genome shotgun sequence
+28. NZ_KB947917	Enterococcus faecium EnGen0172 strain VAN 222 acEQt-supercont1.6, whole genome shotgun sequence
+29. NZ_FREH01000004	Enterococcus faecium isolate Hp_6-10, whole genome shotgun sequence
+30. NZ_KB947931	Enterococcus faecium EnGen0173 strain VAN 332 acEQD-supercont1.3, whole genome shotgun sequence
+31. NZ_MBRG01000142	Enterococcus faecium strain GE1 contig00194, whole genome shotgun sequence
+32. NZ_CP027402	Enterococcus faecium strain FDAARGOS_323 chromosome, complete genome
+33. NZ_KB029675	Enterococcus faecium EnGen0020 strain E1574 acrtf-supercont1.3, whole genome shotgun sequence
+34. NZ_JH811488	Enterococcus faecium 504 Scfld25, whole genome shotgun sequence
+35. NZ_CP025425	Enterococcus faecium strain SC4 chromosome, complete genome
+36. NZ_LNMQ01000001	Enterococcus faecium strain VRE-1406033 Contig_1, whole genome shotgun sequence
+37. NZ_CP027506	Enterococcus faecium strain AUSMDU00004055 chromosome, complete genome
+38. NZ_CP013994	Enterococcus faecium strain 6E6, complete genome
+39. NZ_CP021849	Enterococcus faecium strain 16-346 chromosome, complete genome
+40. NZ_CP019970	Enterococcus faecium isolate 2014-VREF-114 chromosome, complete genome
+41. NZ_CP019208	Enterococcus faecium strain 2014-VREF-41 chromosome, complete genome
+42. NZ_JXZA01000022	Enterococcus faecium strain E161 contig_22, whole genome shotgun sequence
+43. NC_021994	Enterococcus faecium Aus0085, complete genome
+44. NZ_CP023808	Enterococcus faecium strain Efaecium_ER04526.3A chromosome, complete genome
+45. NZ_KB948132	Enterococcus faecium EnGen0180 strain VRE 84 acEPf-supercont1.2, whole genome shotgun sequence
+46. NZ_MQRF01000206	Enterococcus faecium strain 4686 206, whole genome shotgun sequence
+47. NZ_AWWO01000057	Enterococcus faecium UC8733 NODE_62_length_10634_cov_456.821411, whole genome shotgun sequence
+48. NZ_JQBV01000002	Carnobacterium maltaromaticum strain DSM 20730 Scaffold2, whole genome shotgun sequence
+49. NZ_KB944896	Enterococcus faecium EnGen0371 strain VAN 327 aczJb-supercont1.2, whole genome shotgun sequence
+50. NZ_CP006030	Enterococcus faecium T110, complete genome
+
+
+Details:
+
+>>
+1. NZ_KB889550
+Source: Pediococcus acidilactici D3 PAD3_scaffold1, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 2395
+
+Table of genes, locations, strands and annotations of subject cluster:
+PAD3_RS05830	PAD3_RS05830	1161222	1161671	+	DNA_recombinase
+PAD3_RS09920	PAD3_RS09920	1164518	1164742	-	transposase
+PAD3_RS09925	PAD3_RS09925	1170047	1170298	+	hypothetical_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01906	PAD3_RS05835	51	289	103.0716723549488	5.8e-76
+assembly_01907	PAD3_RS05870	100	1401	100.0	0.0
+assembly_01908	PAD3_RS05865	99	339	100.0	2.9e-91
+assembly_01909	PAD3_RS05860	100	227	100.0	6.1e-58
+assembly_01910	PAD3_RS05855	100	139	100.0	1.2e-31
+
+
+
+>>
+2. NZ_CP021998
+Source: Lactobacillus plantarum strain LPL-1 plasmid pPLP-1, complete sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 2314
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01906	CEF05_RS15460	48	269	103.75426621160409	6.2e-70
+assembly_01907	CEF05_RS15480	100	1401	100.0	0.0
+assembly_01908	CEF05_RS15475	99	337	100.0	6.5e-91
+assembly_01909	CEF05_RS15470	100	227	100.0	6.1e-58
+assembly_01910	CEF05_RS15465	72	80	80.64516129032258	6.7e-14
+
+
+
+>>
+3. NZ_AZDX01000066
+Source: Lactobacillus hordei DSM 19519 Scaffold66, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2098
+
+Table of genes, locations, strands and annotations of subject cluster:
+FC92_RS10555	FC92_RS10555	6048	6272	+	transposase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	FC92_RS10530	100	1397	100.0	0.0
+assembly_01908	FC92_RS10535	99	338	100.0	3.8e-91
+assembly_01909	FC92_RS10540	99	226	100.0	1.8e-57
+assembly_01910	FC92_RS10545	98	137	100.0	6e-31
+
+
+
+>>
+4. NZ_JHXK01000054
+Source: Clostridium beijerinckii HUN142 T483DRAFT_scaffold00045.45_C, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 684
+
+Table of genes, locations, strands and annotations of subject cluster:
+T483_RS29415	T483_RS29415	1	349	+	transposase
+T483_RS30605	T483_RS30605	5504	5865	+	esterase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	T483_RS29425	38	463	98.48066298342542	5.6e-128
+assembly_01908	T483_RS29420	54	161	89.08045977011494	1.1e-37
+assembly_01910	T483_RS0118075	49	60	88.70967741935483	7.1e-08
+
+
+
+>>
+5. NZ_LT960778
+Source: Lactobacillus sakei strain FLEC01 genome assembly, plasmid: 2
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1702
+
+Table of genes, locations, strands and annotations of subject cluster:
+LSAF01_RS09600	LSAF01_RS09600	21600	22528	+	IS30_family_transposase
+LSAF01_RS09620	LSAF01_RS09620	23975	24064	+	IS30_family_transposase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	LSAF01_RS09645	52	711	98.75690607734806	9e-203
+assembly_01908	LSAF01_RS09625	47	158	97.12643678160919	9.2e-37
+assembly_01910	LSAF01_RS09635	55	67	90.32258064516128	4.5e-10
+assembly_01910	LSAF01_RS09640	54	66	90.32258064516128	1.7e-09
+assembly_01915	LSAF01_RS09600	99	386	65.8703071672355	3.5e-105
+assembly_01915	LSAF01_RS09660	49	257	90.78498293515358	2.5e-66
+assembly_01915	LSAF01_RS09620	90	57	10.238907849829351	2.2e-06
+
+
+
+>>
+6. NZ_AYYI01000042
+Source: Lactobacillus rennini DSM 20253 NODE_44, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 259
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01909	FC24_RS06775	66	149	99.10714285714286	1.6e-34
+assembly_01910	FC24_RS06780	73	110	100.0	7.8e-23
+
+
+
+>>
+7. NC_008525
+Source: Pediococcus pentosaceus ATCC 25745, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1163
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	PEPE_RS00425	78	1099	99.86187845303867	0.0
+assembly_01910	PEPE_RS00410	51	64	88.70967741935483	6.4e-09
+
+
+
+>>
+8. NZ_AZDX01000051
+Source: Lactobacillus hordei DSM 19519 Scaffold51, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 833
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	FC92_RS09790	56	768	98.48066298342542	6.2e-220
+assembly_01910	FC92_RS09755	61	65	79.03225806451613	2.9e-09
+
+
+
+>>
+9. NZ_LT907930
+Source: Lactobacillus sakei strain J18 chromosome LSAJ18, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 822
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	LSAJ18_RS02195	54	744	98.89502762430939	1.3e-212
+assembly_01910	LSAJ18_RS02185	61	78	98.38709677419355	3.3e-13
+
+
+
+>>
+10. NZ_AZDO01000025
+Source: Lactobacillus futsaii JCM 17355 NODE_32, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 820
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	FC88_RS03195	53	759	98.61878453038673	2.9e-217
+assembly_01910	FC88_RS03210	48	61	87.09677419354838	5.5e-08
+
+
+
+>>
+11. NZ_LT960790
+Source: Lactobacillus sakei strain J54 genome assembly, chromosome: 1
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 728
+
+Table of genes, locations, strands and annotations of subject cluster:
+LSAJ54_RS02985	LSAJ54_RS02985	602740	603810	-	IS3_family_transposase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	LSAJ54_RS02975	55	650	86.74033149171271	2.5e-184
+assembly_01910	LSAJ54_RS02965	61	78	98.38709677419355	3.3e-13
+
+
+
+>>
+12. NZ_ASWD01000004
+Source: Enterococcus pallens ATCC BAA-351 acOtw-supercont2.4, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631
+
+Table of genes, locations, strands and annotations of subject cluster:
+I588_RS26990	I588_RS26990	358892	359170	-	bacteriocin_immunity_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	I588_RS19365	43	550	98.75690607734806	3.5e-154
+assembly_01910	I588_RS19380	61	81	98.38709677419355	5.1e-14
+
+
+
+>>
+13. NZ_ASWD01000004
+Source: Enterococcus pallens ATCC BAA-351 acOtw-supercont2.4, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 628
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	I588_RS18245	45	566	98.34254143646409	4.7e-159
+assembly_01910	I588_RS18220	58	62	69.35483870967742	1.4e-08
+
+
+
+>>
+14. NZ_FMZD01000004
+Source: Marinilactibacillus psychrotolerans strain DSM 19582, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 621
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	BLT22_RS03190	43	545	97.92817679558011	8.5e-153
+assembly_01910	BLT22_RS03210	57	76	98.38709677419355	1.3e-12
+
+
+
+>>
+15. NZ_KB946796
+Source: Enterococcus faecium EnGen0308 acNbm-supercont1.13, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 619
+
+Table of genes, locations, strands and annotations of subject cluster:
+UK5_RS05515	UK5_RS05515	205198	205584	+	hypothetical_protein
+UK5_RS05525	UK5_RS05525	206431	207008	-	transposase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	UK5_RS05495	45	565	98.34254143646409	1e-158
+assembly_01910	UK5_RS05460	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+16. NZ_KB947661
+Source: Enterococcus faecium EnGen0164 strain UAA721 acAqK-supercont1.14, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 619
+
+Table of genes, locations, strands and annotations of subject cluster:
+SKC_RS09845	SKC_RS09845	172064	172450	-	hypothetical_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	SKC_RS09865	45	565	98.34254143646409	1e-158
+assembly_01910	SKC_RS09900	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+17. NZ_KB932697
+Source: Enterococcus faecium EnGen0138 strain 9830091-5 acHWZ-supercont1.5, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 619
+
+Table of genes, locations, strands and annotations of subject cluster:
+SGG_RS12165	SGG_RS12165	391697	392083	+	hypothetical_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	SGG_RS12145	45	565	98.34254143646409	1e-158
+assembly_01910	SGG_RS12110	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+18. NZ_LOHT01000323
+Source: Enterococcus faecium strain LMG 8148 contig_5_1, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 619
+
+Table of genes, locations, strands and annotations of subject cluster:
+AUC59_RS14775	AUC59_RS14775	109363	109557	+	S49_family_peptidase
+AUC59_RS14780	AUC59_RS14780	109604	109867	+	DNA_replication_protein_DnaC
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	AUC59_RS11145	45	565	98.34254143646409	1e-158
+assembly_01910	AUC59_RS11110	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+19. NZ_KB947584
+Source: Enterococcus faecium EnGen0160 strain UAA716 acAqF-supercont1.9, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 619
+
+Table of genes, locations, strands and annotations of subject cluster:
+SK1_RS15810	SK1_RS15810	1218431	1218817	-	hypothetical_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	SK1_RS15830	45	565	98.34254143646409	1e-158
+assembly_01910	SK1_RS15865	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+20. NZ_KB029482
+Source: Enterococcus faecium EnGen0019 strain E0680 acrtE-supercont1.3, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 619
+
+Table of genes, locations, strands and annotations of subject cluster:
+OGK_RS14115	OGK_RS14115	118014	118400	+	hypothetical_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	OGK_RS14095	45	565	98.34254143646409	1e-158
+assembly_01910	OGK_RS14060	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+21. NZ_KB949486
+Source: Enterococcus faecium EnGen0191 strain HM1073 acEPF-supercont1.4, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 618
+
+Table of genes, locations, strands and annotations of subject cluster:
+SSI_RS19060	SSI_RS19060	109079	109202	-	helix-turn-helix_domain_containing_protein
+SSI_RS08450	SSI_RS08450	115829	116527	+	EntD
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	SSI_RS08445	45	564	98.34254143646409	1.8e-158
+assembly_01910	SSI_RS08410	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+22. NZ_LKPG01000034
+Source: Enterococcus faecium strain IQ110 Contig4, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 618
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	AOY34_RS12405	45	564	98.34254143646409	2.3e-158
+assembly_01910	AOY34_RS12370	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+23. NZ_GG688438
+Source: Enterococcus faecium 1,231,501 supercont1.3, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 618
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	EFRG_RS14325	45	564	98.34254143646409	2.3e-158
+assembly_01910	EFRG_RS14295	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+24. NZ_LN999844
+Source: Enterococcus faecium isolate EFE10021 genome assembly, chromosome: chr
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 618
+
+Table of genes, locations, strands and annotations of subject cluster:
+EFE1002_RS10740	EFE1002_RS10740	2228010	2229257	-	ATP-binding_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	EFE1002_RS10720	45	564	98.34254143646409	2.3e-158
+assembly_01910	EFE1002_RS10755	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+25. NZ_KB946097
+Source: Enterococcus faecium EnGen0263 strain UAA1280 acvJW-supercont1.2, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	UA3_RS12855	45	563	98.34254143646409	3e-158
+assembly_01910	UA3_RS12820	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+26. NZ_JH813183
+Source: Enterococcus faecium 505 Scfld346, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	HMPREF1348_RS13725	45	563	98.34254143646409	3e-158
+assembly_01910	HMPREF1348_RS13760	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+27. NZ_FRDY01000002
+Source: Enterococcus faecium isolate Hp_5-10, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	BUC49_RS03555	45	563	98.34254143646409	3e-158
+assembly_01910	BUC49_RS03595	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+28. NZ_KB947917
+Source: Enterococcus faecium EnGen0172 strain VAN 222 acEQt-supercont1.6, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	SKS_RS14745	45	563	98.34254143646409	4e-158
+assembly_01910	SKS_RS14780	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+29. NZ_FREH01000004
+Source: Enterococcus faecium isolate Hp_6-10, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	BUE46_RS04500	45	563	98.34254143646409	4e-158
+assembly_01910	BUE46_RS04460	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+30. NZ_KB947931
+Source: Enterococcus faecium EnGen0173 strain VAN 332 acEQD-supercont1.3, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	SKU_RS07040	45	563	98.34254143646409	4e-158
+assembly_01910	SKU_RS07005	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+31. NZ_MBRG01000142
+Source: Enterococcus faecium strain GE1 contig00194, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	A8G90_RS05980	45	563	98.34254143646409	4e-158
+assembly_01910	A8G90_RS06015	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+32. NZ_CP027402
+Source: Enterococcus faecium strain FDAARGOS_323 chromosome, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 616
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	CEQ01_RS12920	45	562	98.34254143646409	6.7e-158
+assembly_01910	CEQ01_RS12880	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+33. NZ_KB029675
+Source: Enterococcus faecium EnGen0020 strain E1574 acrtf-supercont1.3, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 616
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	OI7_RS15120	45	562	98.34254143646409	8.8e-158
+assembly_01910	OI7_RS15080	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+34. NZ_JH811488
+Source: Enterococcus faecium 504 Scfld25, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	HMPREF1347_RS06330	45	561	98.34254143646409	1.5e-157
+assembly_01910	HMPREF1347_RS06295	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+35. NZ_CP025425
+Source: Enterococcus faecium strain SC4 chromosome, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	CX663_RS11855	45	561	98.34254143646409	2e-157
+assembly_01910	CX663_RS11895	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+36. NZ_LNMQ01000001
+Source: Enterococcus faecium strain VRE-1406033 Contig_1, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	AS262_RS00630	45	561	98.34254143646409	2e-157
+assembly_01910	AS262_RS00665	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+37. NZ_CP027506
+Source: Enterococcus faecium strain AUSMDU00004055 chromosome, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	C6Y17_RS11475	45	561	98.34254143646409	2e-157
+assembly_01910	C6Y17_RS11520	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+38. NZ_CP013994
+Source: Enterococcus faecium strain 6E6, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	AWJ25_RS01500	45	561	98.34254143646409	2e-157
+assembly_01910	AWJ25_RS01465	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+39. NZ_CP021849
+Source: Enterococcus faecium strain 16-346 chromosome, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+CDL00_RS12705	CDL00_RS12705	2474914	2475059	+	hypothetical_protein
+CDL00_RS12760	CDL00_RS12760	2484279	2484424	-	EntF_family_bacteriocin_induction_factor
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	CDL00_RS12730	45	561	98.34254143646409	2e-157
+assembly_01910	CDL00_RS12770	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+40. NZ_CP019970
+Source: Enterococcus faecium isolate 2014-VREF-114 chromosome, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	B4U48_RS12100	45	561	98.34254143646409	2e-157
+assembly_01910	B4U48_RS12060	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+41. NZ_CP019208
+Source: Enterococcus faecium strain 2014-VREF-41 chromosome, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	BVA20_RS13955	45	561	98.34254143646409	2e-157
+assembly_01910	BVA20_RS13915	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+42. NZ_JXZA01000022
+Source: Enterococcus faecium strain E161 contig_22, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	TS80_RS05450	45	561	98.34254143646409	2e-157
+assembly_01910	TS80_RS05410	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+43. NC_021994
+Source: Enterococcus faecium Aus0085, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	EFAU085_RS12465	45	561	98.34254143646409	2e-157
+assembly_01910	EFAU085_RS12505	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+44. NZ_CP023808
+Source: Enterococcus faecium strain Efaecium_ER04526.3A chromosome, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+CO997_RS12160	CO997_RS12160	2349207	2349305	-	DNA-binding_response_regulator
+CO997_RS12165	CO997_RS12165	2349320	2350468	-	ATP-binding_protein
+CO997_RS12175	CO997_RS12175	2351934	2352077	-	ATP-binding_protein
+CO997_RS12195	CO997_RS12195	2353931	2354011	-	bacteriocin_immunity_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	CO997_RS12130	45	561	98.34254143646409	2e-157
+assembly_01910	CO997_RS12200	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+45. NZ_KB948132
+Source: Enterococcus faecium EnGen0180 strain VRE 84 acEPf-supercont1.2, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	SMG_RS09095	45	561	98.34254143646409	2e-157
+assembly_01910	SMG_RS09060	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+46. NZ_MQRF01000206
+Source: Enterococcus faecium strain 4686 206, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 615
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	BSR54_RS16540	45	561	98.34254143646409	2e-157
+assembly_01910	BSR54_RS16580	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+47. NZ_AWWO01000057
+Source: Enterococcus faecium UC8733 NODE_62_length_10634_cov_456.821411, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 614
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	P743_RS0110415	45	560	98.34254143646409	3.3e-157
+assembly_01910	P743_RS0110450	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+48. NZ_JQBV01000002
+Source: Carnobacterium maltaromaticum strain DSM 20730 Scaffold2, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 612
+
+Table of genes, locations, strands and annotations of subject cluster:
+IV76_RS16560	IV76_RS16560	304471	305450	+	hypothetical_protein
+IV76_RS04000	IV76_RS04000	308707	308928	+	aldo/keto_reductase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	IV76_RS03965	43	545	98.20441988950276	1.1e-152
+assembly_01910	IV76_RS03945	53	67	98.38709677419355	7.6e-10
+
+
+
+>>
+49. NZ_KB944896
+Source: Enterococcus faecium EnGen0371 strain VAN 327 aczJb-supercont1.2, whole genome shotgun sequence
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 611
+
+Table of genes, locations, strands and annotations of subject cluster:
+WQ1_RS13395	WQ1_RS13395	149175	149560	+	hypothetical_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	WQ1_RS13375	45	557	98.34254143646409	1.7e-156
+assembly_01910	WQ1_RS13340	56	54	77.41935483870968	3.9e-06
+
+
+
+>>
+50. NZ_CP006030
+Source: Enterococcus faecium T110, complete genome
+Type: bacteriocin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 597
+
+Table of genes, locations, strands and annotations of subject cluster:
+M395_RS10975	M395_RS10975	2264070	2266133	-	peptide_ABC_transporter_ATP-binding_protein
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+assembly_01907	M395_RS10975	45	543	94.7513812154696	4.2e-152
+assembly_01910	M395_RS11025	56	54	77.41935483870968	3.9e-06
+

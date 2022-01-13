@@ -19,7 +19,7 @@ flux,rxn
 1,EX_trp_L(e)
 1,EX_tyr_L(e)
 1,EX_val_L(e)
-4.5,EX_glc(e)
+4.5,EX_glc_D(e)
 1,EX_pyr(e)
 1,EX_ca2(e)
 1,EX_chol(e)

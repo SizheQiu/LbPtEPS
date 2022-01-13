@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="230" width="800" viewBox="0 0 800 230" preserveAspectRatio="none"  >
+<g label="Query sequence" class="clusterblast-cluster"  >
+<text x="5" y="20" class="clusterblast-acc"  >
+Query sequence</text>
+<line x1="10" y1="35" x2="778.0" y2="35" style="stroke-width:1; stroke:grey; "  />
+<polygon points="0,40 70,40 75,35 70,30 0,30 0,40 " style="fill:#d81515; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01906&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 33 - 915" locus_tag="assembly_01906" class="clusterblast-orf" id="dummy-1_q0_0_all"  />
+<polygon points="97,35 102,30 281,30 281,40 102,40 97,35 " style="fill:#15d815; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01907&lt;/b&gt;&lt;br&gt;Lactococcin-G-processing and transport ATP-binding protein LagD&lt;br&gt;Location: 1180 - 3355" locus_tag="assembly_01907" class="clusterblast-orf" id="dummy-1_q1_0_all"  />
+<polygon points="289,35 294,30 334,30 334,40 294,40 289,35 " style="fill:#1515d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01908&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 3453 - 3978" locus_tag="assembly_01908" class="clusterblast-orf" id="dummy-1_q2_0_all"  />
+<polygon points="336,35 341,30 364,30 364,40 341,40 336,35 " style="fill:#d815d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01909&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4001 - 4340" locus_tag="assembly_01909" class="clusterblast-orf" id="dummy-1_q3_0_all"  />
+<polygon points="367,35 372,30 383,30 383,40 372,40 367,35 " style="fill:#d8d815; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01910&lt;/b&gt;&lt;br&gt;Bacteriocin pediocin PA-1&lt;br&gt;Location: 4377 - 4566" locus_tag="assembly_01910" class="clusterblast-orf" id="dummy-1_q4_0_all"  />
+<polygon points="407,35 412,30 420,30 420,40 412,40 407,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01911&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4850 - 4997" locus_tag="assembly_01911" class="clusterblast-orf" id="dummy-1_q5_0_all"  />
+<polygon points="417,35 422,30 430,30 430,40 422,40 417,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01912&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4968 - 5118" locus_tag="assembly_01912" class="clusterblast-orf" id="dummy-1_q6_0_all"  />
+<polygon points="431,35 436,30 447,30 447,40 436,40 431,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01913&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 5136 - 5322" locus_tag="assembly_01913" class="clusterblast-orf" id="dummy-1_q7_0_all"  />
+<polygon points="453,35 458,30 508,30 508,40 458,40 453,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01914&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 5391 - 6045" locus_tag="assembly_01914" class="clusterblast-orf" id="dummy-1_q8_0_all"  />
+<polygon points="521,40 591,40 596,35 591,30 521,30 521,40 " style="fill:#15d8d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01915&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 6198 - 7080" locus_tag="assembly_01915" class="clusterblast-orf" id="dummy-1_q9_0_all"  />
+<polygon points="612,40 655,40 660,35 655,30 612,30 612,40 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01916&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 7273 - 7840" locus_tag="assembly_01916" class="clusterblast-orf" id="dummy-1_q10_0_all"  />
+<polygon points="680,35 685,30 743,30 743,40 685,40 680,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01917&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 8078 - 8828" locus_tag="assembly_01917" class="clusterblast-orf" id="dummy-1_q11_0_all"  />
+<polygon points="769,40 775,40 780,35 775,30 769,30 769,40 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01918&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 9127 - 9265" locus_tag="assembly_01918" class="clusterblast-orf" id="dummy-1_q12_0_all"  />
+</g>
+<g label="NZ_AZDX01000066" description="NZ_AZDX01000066_c2: Lactobacillus hordei DSM 19519 Scaffold66, whole genome s... (44% of genes show similarity), bacteriocin" class="clusterblast-cluster"  >
+<text x="5" y="70" class="clusterblast-acc"  >
+<a xlink:href="https://antismash-db.secondarymetabolites.org/go/NZ_AZDX01000066/2" target="_blank">NZ_AZDX01000066_c2</a>: Lactobacillus hordei DSM 19519 Scaffold66, whole genome s... (44% of genes show similarity), bacteriocin</text>
+<line x1="10" y1="85" x2="778.0" y2="85" style="stroke-width:1; stroke:grey; "  />
+</g>
+<g id="a1_000"  >
+<polygon points="102,85 107,80 149,80 149,90 107,90 102,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10520&lt;/b&gt;&lt;br&gt;histidine phosphatase family protein&lt;br&gt;Location: 124 - 678" locus_tag="FC92_RS10520" class="clusterblast-orf" id="dummy-1_h1_3_0"  />
+</g>
+<g id="a1_001"  >
+<polygon points="163,90 206,90 211,85 206,80 163,80 163,90 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10525&lt;/b&gt;&lt;br&gt;XRE family transcriptional regulator&lt;br&gt;Location: 840 - 1412" locus_tag="FC92_RS10525" class="clusterblast-orf" id="dummy-1_h1_3_1"  />
+</g>
+<g id="a1_002"  >
+<polygon points="263,85 268,80 446,80 446,90 268,90 263,85 " style="fill:#15d815; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10530&lt;/b&gt;&lt;br&gt;peptide cleavage/export ABC transporter&lt;br&gt;Location: 2022 - 4196&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01907&lt;/b&gt;&lt;br&gt;Percentage identity: 100&lt;br&gt;Percentage coverage: 100&lt;br&gt;BLAST bit score: 1397&lt;br&gt;E-value: 0.0" locus_tag="FC92_RS10530" class="clusterblast-orf" id="dummy-1_h1_3_2"  />
+</g>
+<g id="a1_003"  >
+<polygon points="455,85 460,80 499,80 499,90 460,90 455,85 " style="fill:#1515d8; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10535&lt;/b&gt;&lt;br&gt;thioredoxin&lt;br&gt;Location: 4295 - 4819&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01908&lt;/b&gt;&lt;br&gt;Percentage identity: 99&lt;br&gt;Percentage coverage: 100&lt;br&gt;BLAST bit score: 338&lt;br&gt;E-value: 3.8e-91" locus_tag="FC92_RS10535" class="clusterblast-orf" id="dummy-1_h1_3_3"  />
+</g>
+<g id="a1_004"  >
+<polygon points="501,85 506,80 529,80 529,90 506,90 501,85 " style="fill:#d815d8; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10540&lt;/b&gt;&lt;br&gt;PbsX family transcriptional regulator&lt;br&gt;Location: 4843 - 5181&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01909&lt;/b&gt;&lt;br&gt;Percentage identity: 99&lt;br&gt;Percentage coverage: 100&lt;br&gt;BLAST bit score: 226&lt;br&gt;E-value: 1.8e-57" locus_tag="FC92_RS10540" class="clusterblast-orf" id="dummy-1_h1_3_4"  />
+</g>
+<g id="a1_005"  >
+<polygon points="533,85 538,80 549,80 549,90 538,90 533,85 " style="fill:#d8d815; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10545&lt;/b&gt;&lt;br&gt;bacteriocin leader domain-containing protein&lt;br&gt;Location: 5219 - 5407&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01910&lt;/b&gt;&lt;br&gt;Percentage identity: 98&lt;br&gt;Percentage coverage: 100&lt;br&gt;BLAST bit score: 137&lt;br&gt;E-value: 6e-31" locus_tag="FC92_RS10545" class="clusterblast-orf" id="dummy-1_h1_3_5"  />
+</g>
+<g id="a1_006"  >
+<polygon points="566,90 579,90 584,85 579,80 566,80 566,90 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10550&lt;/b&gt;&lt;br&gt;DUF2382 domain-containing protein&lt;br&gt;Location: 5609 - 5827" locus_tag="FC92_RS10550" class="clusterblast-orf" id="dummy-1_h1_3_6"  />
+</g>
+<g id="a1_007"  >
+<polygon points="603,90 617,90 622,85 617,80 603,80 603,90 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10555&lt;/b&gt;&lt;br&gt;transposase&lt;br&gt;Location: 6048 - 6272" locus_tag="FC92_RS10555" class="clusterblast-orf" id="dummy-1_h1_3_7"  />
+</g>
+<g id="a1_008"  >
+<polygon points="628,85 633,80 677,80 677,90 633,90 628,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC92_RS10560&lt;/b&gt;&lt;br&gt;DUF536 domain-containing protein&lt;br&gt;Location: 6346 - 6924" locus_tag="FC92_RS10560" class="clusterblast-orf" id="dummy-1_h1_3_8"  />
+</g>
+</svg>

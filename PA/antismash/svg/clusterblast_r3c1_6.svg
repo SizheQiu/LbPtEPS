@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="230" width="800" viewBox="0 0 800 230" preserveAspectRatio="none"  >
+<g label="Query sequence" class="clusterblast-cluster"  >
+<text x="5" y="20" class="clusterblast-acc"  >
+Query sequence</text>
+<line x1="10" y1="35" x2="778.0" y2="35" style="stroke-width:1; stroke:grey; "  />
+<polygon points="15,40 82,40 87,35 82,30 15,30 15,40 " style="fill:#d81515; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01906&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 33 - 915" locus_tag="assembly_01906" class="clusterblast-orf" id="dummy-1_q0_0_all"  />
+<polygon points="108,35 113,30 285,30 285,40 113,40 108,35 " style="fill:#15d815; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01907&lt;/b&gt;&lt;br&gt;Lactococcin-G-processing and transport ATP-binding protein LagD&lt;br&gt;Location: 1180 - 3355" locus_tag="assembly_01907" class="clusterblast-orf" id="dummy-1_q1_0_all"  />
+<polygon points="293,35 298,30 336,30 336,40 298,40 293,35 " style="fill:#1515d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01908&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 3453 - 3978" locus_tag="assembly_01908" class="clusterblast-orf" id="dummy-1_q2_0_all"  />
+<polygon points="338,35 343,30 365,30 365,40 343,40 338,35 " style="fill:#d815d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01909&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4001 - 4340" locus_tag="assembly_01909" class="clusterblast-orf" id="dummy-1_q3_0_all"  />
+<polygon points="368,35 373,30 384,30 384,40 373,40 368,35 " style="fill:#d8d815; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01910&lt;/b&gt;&lt;br&gt;Bacteriocin pediocin PA-1&lt;br&gt;Location: 4377 - 4566" locus_tag="assembly_01910" class="clusterblast-orf" id="dummy-1_q4_0_all"  />
+<polygon points="407,35 412,30 419,30 419,40 412,40 407,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01911&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4850 - 4997" locus_tag="assembly_01911" class="clusterblast-orf" id="dummy-1_q5_0_all"  />
+<polygon points="416,35 421,30 428,30 428,40 421,40 416,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01912&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 4968 - 5118" locus_tag="assembly_01912" class="clusterblast-orf" id="dummy-1_q6_0_all"  />
+<polygon points="430,35 435,30 445,30 445,40 435,40 430,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01913&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 5136 - 5322" locus_tag="assembly_01913" class="clusterblast-orf" id="dummy-1_q7_0_all"  />
+<polygon points="451,35 456,30 504,30 504,40 456,40 451,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01914&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 5391 - 6045" locus_tag="assembly_01914" class="clusterblast-orf" id="dummy-1_q8_0_all"  />
+<polygon points="516,40 583,40 588,35 583,30 516,30 516,40 " style="fill:#15d8d8; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01915&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 6198 - 7080" locus_tag="assembly_01915" class="clusterblast-orf" id="dummy-1_q9_0_all"  />
+<polygon points="603,40 645,40 650,35 645,30 603,30 603,40 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01916&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 7273 - 7840" locus_tag="assembly_01916" class="clusterblast-orf" id="dummy-1_q10_0_all"  />
+<polygon points="669,35 674,30 730,30 730,40 674,40 669,35 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01917&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 8078 - 8828" locus_tag="assembly_01917" class="clusterblast-orf" id="dummy-1_q11_0_all"  />
+<polygon points="754,40 760,40 765,35 760,30 754,30 754,40 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;assembly_01918&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 9127 - 9265" locus_tag="assembly_01918" class="clusterblast-orf" id="dummy-1_q12_0_all"  />
+</g>
+<g label="NZ_AYYI01000042" description="NZ_AYYI01000042_c2: Lactobacillus rennini DSM 20253 NODE 44, whole genome sho... (20% of genes show similarity), bacteriocin" class="clusterblast-cluster"  >
+<text x="5" y="70" class="clusterblast-acc"  >
+<a xlink:href="https://antismash-db.secondarymetabolites.org/go/NZ_AYYI01000042/2" target="_blank">NZ_AYYI01000042_c2</a>: Lactobacillus rennini DSM 20253 NODE 44, whole genome sho... (20% of genes show similarity), bacteriocin</text>
+<line x1="10" y1="85" x2="778.0" y2="85" style="stroke-width:1; stroke:grey; "  />
+</g>
+<g id="a1_000"  >
+<polygon points="0,85 5,80 115,80 115,90 5,90 0,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06755&lt;/b&gt;&lt;br&gt;hypothetical protein&lt;br&gt;Location: 10756 - 12177" locus_tag="FC24_RS06755" class="clusterblast-orf" id="dummy-1_h1_6_0"  />
+</g>
+<g id="a1_001"  >
+<polygon points="115,85 120,80 161,80 161,90 120,90 115,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06760&lt;/b&gt;&lt;br&gt;Fis family transcriptional regulator&lt;br&gt;Location: 12177 - 12746" locus_tag="FC24_RS06760" class="clusterblast-orf" id="dummy-1_h1_6_1"  />
+</g>
+<g id="a1_002"  >
+<polygon points="163,85 168,80 191,80 191,90 168,90 163,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06765&lt;/b&gt;&lt;br&gt;ethanolamine utilization microcompartment protein EutS&lt;br&gt;Location: 12768 - 13115" locus_tag="FC24_RS06765" class="clusterblast-orf" id="dummy-1_h1_6_2"  />
+</g>
+<g id="a1_003"  >
+<polygon points="199,85 204,80 291,80 291,90 204,90 199,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06770&lt;/b&gt;&lt;br&gt;alcohol dehydrogenase&lt;br&gt;Location: 13213 - 14343" locus_tag="FC24_RS06770" class="clusterblast-orf" id="dummy-1_h1_6_3"  />
+</g>
+<g id="a1_004"  >
+<polygon points="338,85 343,80 365,80 365,90 343,90 338,85 " style="fill:#d815d8; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06775&lt;/b&gt;&lt;br&gt;PbsX family transcriptional regulator&lt;br&gt;Location: 14919 - 15257&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01909&lt;/b&gt;&lt;br&gt;Percentage identity: 66&lt;br&gt;Percentage coverage: 99&lt;br&gt;BLAST bit score: 149&lt;br&gt;E-value: 1.6e-34" locus_tag="FC24_RS06775" class="clusterblast-orf" id="dummy-1_h1_6_4"  />
+</g>
+<g id="a1_005"  >
+<polygon points="370,85 375,80 386,80 386,90 375,90 370,85 " style="fill:#d8d815; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06780&lt;/b&gt;&lt;br&gt;bacteriocin&lt;br&gt;Location: 15321 - 15509&lt;br&gt;&lt;br&gt;&lt;b&gt;BlastP hit with assembly_01910&lt;/b&gt;&lt;br&gt;Percentage identity: 73&lt;br&gt;Percentage coverage: 100&lt;br&gt;BLAST bit score: 110&lt;br&gt;E-value: 7.8e-23" locus_tag="FC24_RS06780" class="clusterblast-orf" id="dummy-1_h1_6_5"  />
+</g>
+<g id="a1_006"  >
+<polygon points="449,85 454,80 495,80 495,90 454,90 449,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06785&lt;/b&gt;&lt;br&gt;ATP:cob(I)alamin adenosyltransferase&lt;br&gt;Location: 16285 - 16848" locus_tag="FC24_RS06785" class="clusterblast-orf" id="dummy-1_h1_6_6"  />
+</g>
+<g id="a1_007"  >
+<polygon points="504,85 509,80 620,80 620,90 509,90 504,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06790&lt;/b&gt;&lt;br&gt;dipeptidase&lt;br&gt;Location: 16962 - 18392" locus_tag="FC24_RS06790" class="clusterblast-orf" id="dummy-1_h1_6_7"  />
+</g>
+<g id="a1_008"  >
+<polygon points="628,85 633,80 693,80 693,90 633,90 628,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06795&lt;/b&gt;&lt;br&gt;MurR/RpiR family transcriptional regulator&lt;br&gt;Location: 18490 - 19296" locus_tag="FC24_RS06795" class="clusterblast-orf" id="dummy-1_h1_6_8"  />
+</g>
+<g id="a1_009"  >
+<polygon points="708,85 713,80 780,80 780,90 713,90 708,85 " style="fill:white; stroke-width:1; stroke:black; " description="&lt;b&gt;FC24_RS06800&lt;/b&gt;&lt;br&gt;fructose-1,6-bisphosphate aldolase, class II&lt;br&gt;Location: 19474 - 20355" locus_tag="FC24_RS06800" class="clusterblast-orf" id="dummy-1_h1_6_9"  />
+</g>
+</svg>
