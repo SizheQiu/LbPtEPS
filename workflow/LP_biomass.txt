@@ -1,0 +1,24 @@
+>biomass
+(0.1294) CPS_LPL2 + (0.000617) DNA_LPL + (0.00013) LTA_LPL + (0.00001) MGD + (0.1462) PGlac2 + (0.00243) PROT_LPL_v6.0 + (0.002784) RNA_LPL + (0.01378) RTAglc + (27.2) atp + (0.00001) btn + (0.000018) clpn_LPL + (0.0002) coa + (27.2) h2o + (0.000164) lyspg_LPL + (0.0002) nad + (0.000625) pg_LPL + (0.000001) pydx5p + (0.00001) thf + (0.00001) thmpp + (0.0002) udcpdp --> (27.2) adp + (27.2) h + (27.2) pi
+>DNA_LPL
+(1.37) atp + (0.28) datp + (0.22) dctp + (0.22) dgtp + (0.28) dttp + (1.37) h2o --> (0.01) DNA_LPL + (1.37) adp + (1.37) h + (1.37) pi + ppi
+>RNA_LPL
+(0.66) atp + (0.2) ctp + (0.32) gtp + (0.4) h2o + (0.22) utp --> (0.01) RNA_LPL + (0.4) adp + (0.4) h + (0.4) pi + ppi
+>CPS_LPL
+capsular polysaccharide linkage unit, LPL specific
+>LTA_LPL
+lipoteichoic acid (n=25, LPL specific)
+>MGD
+mocogdp_c
+>btn
+btn_c
+>PGlac2
+peptidoglycan with D-lac as C-terminal residue to form pentadepsipeptide
+>PROT_LPL_v6.0
+>RTAglc
+RTA + (25) udpg --> RTAglc + (25) h + (25) udp
+unRTA --> RTA + udcpp
+CRPT_25:(25) cdprbtl + unagamagp --> (25) cmp + (25) h + unRTA
+>clpn_LPL
+>lyspg_LPL
+>pg_LPL

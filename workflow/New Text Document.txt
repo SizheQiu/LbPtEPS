@@ -1,0 +1,1 @@
+2.45 protein + 0.279 RNA + 0.062 DNA + vitamins + 0.081 lipids + 0.129 polysaccharides + 0.146 peptidoglycans + 0.014 wall teichoic acids + 0.013 lipoteichoic acids + 27.4 ATP + 27.4 H2O -> biomass + 27.4 ADP + 27.4 H+
