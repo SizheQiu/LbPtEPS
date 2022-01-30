@@ -9,16 +9,18 @@ capsular polysaccharide linkage unit, LPL specific
 >LTA_LPL
 lipoteichoic acid (n=25, LPL specific)
 >MGD
-mocogdp_c
+MOGDS
 >btn
 btn_c
 >PGlac2
-peptidoglycan with D-lac as C-terminal residue to form pentadepsipeptide
+
 >PROT_LPL_v6.0
 >RTAglc
 RTA + (25) udpg --> RTAglc + (25) h + (25) udp
 unRTA --> RTA + udcpp
-CRPT_25:(25) cdprbtl + unagamagp --> (25) cmp + (25) h + unRTA
->clpn_LPL
->lyspg_LPL
->pg_LPL
+(25) cdprbtl + unagamagp --> (25) cmp + (25) h + unRTA
+ctp + h + rbt5p --> cdprbtl + ppi
+atp + rbt --> adp + h + rbt5p
+nadp + rbt5p <==> h + nadph + ru5p-D
+h_e + rbt_e ⇌ h_c + rbt_c
+rbt <==>
