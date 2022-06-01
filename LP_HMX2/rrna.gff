@@ -1,0 +1,17 @@
+##gff-version 3
+BCH_pilon	barrnap:0.9	rRNA	482733	484295	0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	484733	487649	0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	487726	487837	2.7e-12	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	1126179	1127741	0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	1128179	1131095	0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	1131172	1131283	4.2e-12	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2020547	2020658	2.7e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2020874	2020985	2.7e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2021062	2023978	0	-	.	Name=23S_rRNA;product=23S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2024186	2025748	0	-	.	Name=16S_rRNA;product=16S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2490188	2490299	2.7e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2490376	2493292	0	-	.	Name=23S_rRNA;product=23S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2493501	2495063	0	-	.	Name=16S_rRNA;product=16S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2980756	2980867	2.7e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2980944	2983860	0	-	.	Name=23S_rRNA;product=23S ribosomal RNA
+BCH_pilon	barrnap:0.9	rRNA	2984069	2985631	0	-	.	Name=16S_rRNA;product=16S ribosomal RNA
