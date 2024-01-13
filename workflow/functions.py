@@ -1,6 +1,8 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import pandas as pd
+import os
+import pickle
 
 def volcano( table, lfc_col, pv_col, lfc_cutoff, pv_cutoff, ax):
     lfc_list = list(table[lfc_col])
@@ -11,9 +13,9 @@ def volcano( table, lfc_col, pv_col, lfc_cutoff, pv_cutoff, ax):
     for i in range(len(lfc_list) ):
         if mlg10pv[i] > y_cut:
             if lfc_list[i] > x_cut1:
-                color_list.append('tab:red')
+                color_list.append('red')
             elif lfc_list[i] < x_cut2:
-                color_list.append('tab:blue')
+                color_list.append('blue')
             else:
                 color_list.append('grey')
         else:
@@ -65,6 +67,16 @@ def get_deg(table, lfc_col, pv_col, lfc_cutoff, pv_cutoff):
     sig_table = table[ ( (table[lfc_col]>x_cut1) | (table[lfc_col]<x_cut2) ) & (table[pv_col]<pv_cutoff)  ]
     sig_table = sig_table.reset_index().drop(['index'],axis=1)
     return {'up':list(sig_table[sig_table[lfc_col]>0]['ID']),'down':list(sig_table[sig_table[lfc_col]<0]['ID'])}
+
+def load_pickle(filename):
+    temp = None
+    with open(filename,'rb') as f:
+        temp = pickle.load(f)
+    return temp
+        
+def dump_pickle(file, filename):
+    with open(filename, 'wb') as f:
+        pickle.dump( file , f)
 
 
 
