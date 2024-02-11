@@ -4,6 +4,7 @@ from cobra import Model, Reaction, Metabolite
 import numpy as np
 
 
+
 def init_MRSmedium():
     out_medium = {}
     vitamins = ['EX_btn_e','EX_pnto_R_e', 'EX_ribflv_e', 'EX_thm_e', 'EX_fol_e', 'EX_nac_e','EX_pydam_e']
@@ -20,6 +21,25 @@ def init_MRSmedium():
     for EX_m in others:
         out_medium[EX_m] = 1000
     return out_medium
+
+def approx_pH(lac_con, c1, c2):
+    #approximate pH change in lactic acid fermentation
+    return c1*lac_con + c2
+
+def update_activity(A_dict, pH, lac_con, ApH_table):
+    #update enzyme acticity based on pH.
+    updated_As = {}
+    lach = lac_con/(10**(pH-3.86))
+    updated_As['GLCpts'] = abs(A_dict['GLCpts'])*exp( -klach*lach )
+    for i in range(len(ApH_table.index)):
+        rxn, func_name, k1,k2 = list(ApH_table.iloc[i])
+        A0=A_dict[rxn]
+        if func_name == 'cubic':
+            updated_As[rxn] = A0 * ( k1*(pH-k2)**3 )
+        else:
+            updated_As[rxn] = A0 * ( 1/(1+np.exp(-k1*(pH-k2))) )
+    return updated_As
+            
 
 def set_LpPA( model, ptot, a_dict ):
     sigma = 0.5
