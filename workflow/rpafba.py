@@ -2,7 +2,9 @@ import cobra
 from cobra.io import read_sbml_model
 from cobra import Model, Reaction, Metabolite
 import numpy as np
-
+'''
+Regulatory proteome constrained flux balance analysis of L.plantarum
+'''
 
 
 def init_MRSmedium():
@@ -43,12 +45,12 @@ def update_activity(A_dict, pH, lac_con, ApH_table):
 
 def set_LpPA( model, ptot, a_dict ):
     sigma = 0.5
-    # anabolism and transportation
+    # A and T sectors
     expr = model.reactions.biomass_LPL60.flux_expression/a_dict['biomass_LPL60'] +\
            model.reactions.EX_glc_e.flux_expression/(-1*a_dict['EX_glc_e'])  +\
            model.reactions.EX_ac_e.flux_expression/(sigma*a_dict['EX_ac_e']) + \
            model.reactions.EX_lac_L_e.flux_expression/(sigma*a_dict['EX_lac_L_e'])
-           
+    # C and U sectors     
     for k in a_dict.keys():
         if ( 'EX_' not in k ) and ( 'biomass' not in k ):
             expr = expr + model.reactions.get_by_id(k).flux_expression/( sigma*a_dict[k] )
@@ -58,5 +60,24 @@ def set_LpPA( model, ptot, a_dict ):
     model.add_cons_vars([ PA ])
     
     return expr
+
+def pH_LpPA( model, ptot, a_dict, pH):
+    sigma=0.5
+    r0, r1, k1, k2 =0.1065, 0.07443, 11.09 , 5.136;
+    ratio= r0+r1/(1+np.exp(k1*(pH-k2)))
+    p_sector=model.reactions.biomass_LPL60.flux_expression/a_dict['biomass_LPL60'] +\
+           model.reactions.EX_glc_e.flux_expression/(-1*a_dict['EX_glc_e'])  +\
+           model.reactions.EX_ac_e.flux_expression/(sigma*a_dict['EX_ac_e']) + \
+           model.reactions.EX_lac_L_e.flux_expression/(sigma*a_dict['EX_lac_L_e'])
+    
+    for k in a_dict.keys():
+        p_sector = p_sector + model.reactions.get_by_id(k).flux_expression/( sigma*a_dict[k] )
+        
+    u_sector=None
+    pHPA = model.problem.Constraint( expression = u_sector - ratio * ( p_sector + u_sector ),
+                                                     name = 'pHPA', lb= 0, ub = 0 )
+    model.add_cons_vars([ pHPA ])
+    return u_sector - ratio * ( p_sector + u_sector )
+
 
 
