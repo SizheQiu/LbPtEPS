@@ -54,17 +54,17 @@ def set_LpPA( model, ptot, a_dict ):
     for k in a_dict.keys():
         if ( 'EX_' not in k ) and ( 'biomass' not in k ):
             expr = expr + model.reactions.get_by_id(k).flux_expression/( sigma*a_dict[k] )
-            
-        
+              
     PA = model.problem.Constraint( expression = expr,name = 'PA', lb= 0, ub = 0.5*ptot)
     model.add_cons_vars([ PA ])
     
     return expr
 
-def pH_LpPA( model, ptot, a_dict, pH):
+def set_LppHPA( model, ptot, a_dict, pH):
     sigma=0.5
-    r0, r1, k1, k2 =0.1065, 0.07443, 11.09 , 5.136;
-    ratio= r0+r1/(1+np.exp(k1*(pH-k2)))
+    r0, r1, kpH, k1 = 0.0876, 0.07953, 44.9457 , 5.0344;
+    ratio= r0+r1/( 1+np.exp(kpH*(pH-k1)) )
+    
     p_sector=model.reactions.biomass_LPL60.flux_expression/a_dict['biomass_LPL60'] +\
            model.reactions.EX_glc_e.flux_expression/(-1*a_dict['EX_glc_e'])  +\
            model.reactions.EX_ac_e.flux_expression/(sigma*a_dict['EX_ac_e']) + \
@@ -73,7 +73,12 @@ def pH_LpPA( model, ptot, a_dict, pH):
     for k in a_dict.keys():
         p_sector = p_sector + model.reactions.get_by_id(k).flux_expression/( sigma*a_dict[k] )
         
-    u_sector=None
+    u_sector= model.reactions.MANT_EPS.flux_expression/( sigma*a_dict['MANT_EPS'] ) +\
+            model.reactions.GLCT_EPS.flux_expression/( sigma*a_dict['GLCT_EPS'] ) +\
+            model.reactions.GALT_EPS.flux_expression/( sigma*a_dict['GALT_EPS'] )+\
+            model.reactions.WZX.flux_expression/( sigma*a_dict['WZX'] )
+               
+    
     pHPA = model.problem.Constraint( expression = u_sector - ratio * ( p_sector + u_sector ),
                                                      name = 'pHPA', lb= 0, ub = 0 )
     model.add_cons_vars([ pHPA ])
