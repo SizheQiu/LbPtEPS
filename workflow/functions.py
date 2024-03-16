@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import pickle
 
-def volcano( table, lfc_col, pv_col, lfc_cutoff, pv_cutoff, ax):
+def volcano( table, lfc_col, pv_col, lfc_cutoff, pv_cutoff, size, ax):
     lfc_list = list(table[lfc_col])
     mlg10pv = [ -np.log10(x) for x in list(table[pv_col]) ]
     x_cut1 = lfc_cutoff; x_cut2 = - lfc_cutoff;
@@ -20,7 +20,7 @@ def volcano( table, lfc_col, pv_col, lfc_cutoff, pv_cutoff, ax):
                 color_list.append('grey')
         else:
             color_list.append('grey')
-    ax.scatter(lfc_list, mlg10pv, c=color_list, marker='o',linewidth=0.5,edgecolor='black',alpha=0.5)
+    ax.scatter(lfc_list, mlg10pv, c=color_list, marker='o',linewidth=0.5,edgecolor='black',s=size, alpha=0.5)
     ax.axhline(y=y_cut, color='grey', linestyle='--')
     ax.axvline(x=x_cut1, color='grey', linestyle='--')
     ax.axvline(x=x_cut2, color='grey', linestyle='--')
