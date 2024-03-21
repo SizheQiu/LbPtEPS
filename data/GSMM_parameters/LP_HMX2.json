@@ -4635,6 +4635,13 @@
 "formula":"C5H11NO2"
 },
 {
+"id":"gal_e",
+"name":"D-Galactose",
+"compartment":"default",
+"charge":0,
+"formula":"C6H12O6"
+},
+{
 "id":"gdpmann_c",
 "name":"GDP-D-mannose",
 "compartment":"default",
@@ -8961,7 +8968,7 @@
 "udpgal_c":1.0,
 "utp_c":-1.0
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_3480"
 },
@@ -10657,13 +10664,13 @@
 "id":"LDH_D",
 "name":"D lactate dehydrogenase",
 "metabolites":{
-"h_c":1.0,
-"lac__D_c":-1.0,
-"nad_c":-1.0,
-"nadh_c":1.0,
-"pyr_c":1.0
+"h_c":-1,
+"lac__D_c":1,
+"nad_c":1,
+"nadh_c":-1,
+"pyr_c":-1
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_2057"
 },
@@ -10952,11 +10959,11 @@
 "gene_reaction_rule":"lp_2829 or lp_1119 or lp_0594"
 },
 {
-"id":"MAN6PI",
+"id":"MAN6PI_rev",
 "name":"mannose 6 phosphate isomerase",
 "metabolites":{
-"f6p_c":-1,
-"man6p_c":1
+"f6p_c":1.0,
+"man6p_c":-1.0
 },
 "lower_bound":0.0,
 "upper_bound":1000.0,
@@ -12196,7 +12203,7 @@
 "gene_reaction_rule":"( lp_1751 and lp_1413 and lp_2200 ) or ( lp_1751 and lp_1413 and lp_1568 )"
 },
 {
-"id":"PGI",
+"id":"PGI_for",
 "name":"glucose 6 phosphate isomerase",
 "metabolites":{
 "f6p_c":1.0,
@@ -12260,10 +12267,10 @@
 "id":"PGMT",
 "name":"phosphoglucomutase",
 "metabolites":{
-"g1p_c":-1.0,
-"g6p_c":1.0
+"g1p_c":1,
+"g6p_c":-1
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_0764"
 },
@@ -12456,10 +12463,10 @@
 "id":"PMANM",
 "name":"phosphomannomutase",
 "metabolites":{
-"man1p_c":-1.0,
-"man6p_c":1.0
+"man1p_c":1,
+"man6p_c":-1
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_0764"
 },
@@ -13476,24 +13483,24 @@
 "gene_reaction_rule":"lp_2673 or lp_2932"
 },
 {
-"id":"RPE",
+"id":"RPE_for",
 "name":"ribulose 5 phosphate 3 epimerase",
 "metabolites":{
 "ru5p__D_c":-1.0,
 "xu5p__D_c":1.0
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_1621"
 },
 {
-"id":"RPI",
+"id":"RPI_for",
 "name":"ribose 5 phosphate isomerase",
 "metabolites":{
 "r5p_c":-1.0,
 "ru5p__D_c":1.0
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_0354 or lp_0602"
 },
@@ -14526,7 +14533,7 @@
 "gene_reaction_rule":"lp_3407"
 },
 {
-"id":"UDPG4E",
+"id":"UDPG4E_for",
 "name":"UDPglucose 4 epimerase",
 "metabolites":{
 "udpg_c":-1.0,
@@ -14878,6 +14885,91 @@
 "upper_bound":1000.0,
 "gene_reaction_rule":"",
 "objective_coefficient":1.0
+},
+{
+"id":"RPI_rev",
+"name":"ribose 5 phosphate isomerase(reverse)",
+"metabolites":{
+"r5p_c":1,
+"ru5p__D_c":-1
+},
+"lower_bound":0,
+"upper_bound":1000.0,
+"gene_reaction_rule":"",
+"subsystem":0
+},
+{
+"id":"RPE_rev",
+"name":"ribulose 5 phosphate 3 epimerase(reverse)",
+"metabolites":{
+"ru5p__D_c":1,
+"xu5p__D_c":-1
+},
+"lower_bound":0,
+"upper_bound":1000.0,
+"gene_reaction_rule":"",
+"subsystem":0
+},
+{
+"id":"PGI_rev",
+"name":"glucose 6 phosphate isomerase(reverse)",
+"metabolites":{
+"f6p_c":-1,
+"g6p_c":1
+},
+"lower_bound":0,
+"upper_bound":1000.0,
+"gene_reaction_rule":"",
+"subsystem":0
+},
+{
+"id":"UDPG4E_rev",
+"name":"UDPglucose 4 epimerase(reverse)",
+"metabolites":{
+"udpg_c":1,
+"udpgal_c":-1
+},
+"lower_bound":0,
+"upper_bound":1000.0,
+"gene_reaction_rule":"",
+"subsystem":0
+},
+{
+"id":"MAN6PI_for",
+"name":"mannose 6 phosphate isomerase(forward)",
+"metabolites":{
+"f6p_c":-1,
+"man6p_c":1
+},
+"lower_bound":0,
+"upper_bound":1000.0,
+"gene_reaction_rule":"",
+"subsystem":0
+},
+{
+"id":"EX_gal_e",
+"name":"D-Galactose exchange",
+"metabolites":{
+"gal_e":-1
+},
+"lower_bound":-1000.0,
+"upper_bound":1000.0,
+"gene_reaction_rule":"",
+"subsystem":-1000
+},
+{
+"id":"GALt2",
+"name":"D-Galactose exchange",
+"metabolites":{
+"gal_c":-1,
+"gal_e":1,
+"h_c":-1,
+"h_e":1
+},
+"lower_bound":-1000.0,
+"upper_bound":1000.0,
+"gene_reaction_rule":"",
+"subsystem":-1000
 },
 {
 "id":"MAN1PT",
