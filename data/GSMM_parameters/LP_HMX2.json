@@ -6969,19 +6969,6 @@
 "gene_reaction_rule":"lp_1011 or lp_1329"
 },
 {
-"id":"DHAPT",
-"name":"Dihydroxyacetone phosphotransferase",
-"metabolites":{
-"dha_c":-1.0,
-"dhap_c":1.0,
-"pep_c":-1.0,
-"pyr_c":1.0
-},
-"lower_bound":0.0,
-"upper_bound":1000.0,
-"gene_reaction_rule":"( ( lp_0166 and lp_0169 ) and lp_0170 and lp_1273 and lp_1274 ) or ( ( lp_0168 and lp_0169 ) and lp_0170 and lp_1273 and lp_1274 )"
-},
-{
 "id":"DHAt",
 "name":"Dihydroxyacetone transport via facilitated diffusion",
 "metabolites":{
@@ -8565,18 +8552,6 @@
 "gene_reaction_rule":""
 },
 {
-"id":"F6PA",
-"name":"fructose 6 phosphate aldolase",
-"metabolites":{
-"dha_c":1.0,
-"f6p_c":-1.0,
-"g3p_c":1.0
-},
-"lower_bound":-1000.0,
-"upper_bound":1000.0,
-"gene_reaction_rule":"lp_2600 or lp_3617"
-},
-{
 "id":"FABM1",
 "name":"Fatty acid enoyl isomerase FabM reaction",
 "metabolites":{
@@ -9164,19 +9139,6 @@
 "lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"( lp_2531 and lp_1273 and lp_1274 ) or ( ( lp_3520 and lp_3522 ) and lp_1273 and lp_1274 )"
-},
-{
-"id":"GLCt2r",
-"name":"GLCt2r",
-"metabolites":{
-"glc__D_c":1.0,
-"glc__D_e":-1.0,
-"h_c":1.0,
-"h_e":-1.0
-},
-"lower_bound":-1000.0,
-"upper_bound":1000.0,
-"gene_reaction_rule":""
 },
 {
 "id":"GLGC",
@@ -12446,20 +12408,6 @@
 "gene_reaction_rule":""
 },
 {
-"id":"PKL",
-"name":"phosphoketolase",
-"metabolites":{
-"actp_c":1.0,
-"g3p_c":1.0,
-"h2o_c":1.0,
-"pi_c":-1.0,
-"xu5p__D_c":-1.0
-},
-"lower_bound":-1000.0,
-"upper_bound":1000.0,
-"gene_reaction_rule":"lp_2659 and lp_3551"
-},
-{
 "id":"PMANM",
 "name":"phosphomannomutase",
 "metabolites":{
@@ -14831,7 +14779,8 @@
 },
 "lower_bound":0.0,
 "upper_bound":1000.0,
-"gene_reaction_rule":""
+"gene_reaction_rule":"",
+"objective_coefficient":1.0
 },
 {
 "id":"biomass_LPL_RETB_t576_NoATP",
@@ -14883,8 +14832,7 @@
 },
 "lower_bound":0.0,
 "upper_bound":1000.0,
-"gene_reaction_rule":"",
-"objective_coefficient":1.0
+"gene_reaction_rule":""
 },
 {
 "id":"RPI_rev",
@@ -15146,22 +15094,6 @@
 {
 "id":"lp_0125",
 "name":"lp_0125"
-},
-{
-"id":"lp_0166",
-"name":"lp_0166"
-},
-{
-"id":"lp_0168",
-"name":"lp_0168"
-},
-{
-"id":"lp_0169",
-"name":"lp_0169"
-},
-{
-"id":"lp_0170",
-"name":"lp_0170"
 },
 {
 "id":"lp_0171",
@@ -17252,10 +17184,6 @@
 "name":"lp_2598"
 },
 {
-"id":"lp_2600",
-"name":"lp_2600"
-},
-{
 "id":"lp_2610",
 "name":"lp_2610"
 },
@@ -17290,10 +17218,6 @@
 {
 "id":"lp_2653",
 "name":"lp_2653"
-},
-{
-"id":"lp_2659",
-"name":"lp_2659"
 },
 {
 "id":"lp_2673",
@@ -17804,10 +17728,6 @@
 "name":"lp_3548"
 },
 {
-"id":"lp_3551",
-"name":"lp_3551"
-},
-{
 "id":"lp_3553",
 "name":"lp_3553"
 },
@@ -17898,10 +17818,6 @@
 {
 "id":"lp_3615",
 "name":"lp_3615"
-},
-{
-"id":"lp_3617",
-"name":"lp_3617"
 },
 {
 "id":"lp_3618",

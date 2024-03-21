@@ -28,6 +28,23 @@ def approx_pH(lac_con, c1, c2):
     #approximate pH change in lactic acid fermentation
     return c1*lac_con + c2
 
+def approx_pH(x):
+    k1=4438.85;k2=7.62;
+    #approximate pH change in MRS medium
+    return np.log(k1/(x+k2) )
+
+def LacIn( v_max,v_min, lac_con, klach ):
+    pH = approx_pH(lac_con)
+    lach = lac_con/(10**(pH-3.86))
+    temp_value = abs(v_max)*exp( -klach*lach )
+    if v_max > 0:
+        out = max(temp_value, abs(v_min) )
+    else:
+        out = -1*max( temp_value, abs(v_min) )
+    return out
+
+
+
 def update_activity(A_dict, pH, lac_con, ApH_table):
     #update enzyme acticity based on pH.
     updated_As = {}
@@ -43,13 +60,22 @@ def update_activity(A_dict, pH, lac_con, ApH_table):
     return updated_As
             
 
-def set_LpPA( model, ptot, a_dict ):
+def set_LpPA( model, ptot, params, profile, pH, a_dict, amin_dict ):
     sigma = 0.5
+    klach = params['klach']
+    #update LacH inhbition on carbon source uptake
+    lac_con = profile['lac_D_e']
+    A_GLCpts = LacIn( a_dict['GLCpts'], amin_dict['GLCpts'], lac_con, klach )
+    A_MANpts = LacIn( a_dict['MANpts'],amin_dict['MANpts'], lac_con, klach )
+    A_LCTSt = LacIn( a_dict['LCTSt'],amin_dict['LCTSt'], lac_con, klach )
     # A and T sectors
     expr = model.reactions.biomass_LPL60.flux_expression/a_dict['biomass_LPL60'] +\
-           model.reactions.EX_glc_e.flux_expression/(-1*a_dict['EX_glc_e'])  +\
+           model.reactions.GLCpts.flux_expression/(-1*A_GLCpts)  +\
+           model.reactions.MANpts.flux_expression/(-1*A_MANpts) +\
+           model.reactions.LCTSt.flux_expression/(-1*A_LCTSt) +\
            model.reactions.EX_ac_e.flux_expression/(sigma*a_dict['EX_ac_e']) + \
-           model.reactions.EX_lac_L_e.flux_expression/(sigma*a_dict['EX_lac_L_e'])
+           model.reactions.EX_lac_L_e.flux_expression/(sigma*a_dict['EX_lac_L_e']) +\
+           model.reactions.EX_lac_D_e.flux_expression/(sigma*a_dict['EX_lac_D_e'])
     # C and U sectors     
     for k in a_dict.keys():
         if ( 'EX_' not in k ) and ( 'biomass' not in k ):
@@ -60,10 +86,17 @@ def set_LpPA( model, ptot, a_dict ):
     
     return expr
 
-def set_LppHPA( model, ptot, a_dict, pH):
+def set_LppHPA( model, ptot, params, profile, pH, a_dict, amin_dict ):
     sigma=0.5
     r0, r1, kpH, k1 = 0.0876, 0.07953, 44.9457 , 5.0344;
-    ratio= r0+r1/( 1+np.exp(kpH*(pH-k1)) )
+    u_ratio= r0+r1/( 1+np.exp(kpH*(pH-k1)) )
+    
+    klach = params['klach']
+    #update LacH inhbition on carbon source uptake
+    lac_con = profile['lac_D_e']
+    A_GLCpts = LacIn( a_dict['GLCpts'], amin_dict['GLCpts'], lac_con, klach )
+    A_MANpts = LacIn( a_dict['MANpts'],amin_dict['MANpts'], lac_con, klach )
+    A_LCTSt = LacIn( a_dict['LCTSt'],amin_dict['LCTSt'], lac_con, klach )
     
     p_sector=model.reactions.biomass_LPL60.flux_expression/a_dict['biomass_LPL60'] +\
            model.reactions.EX_glc_e.flux_expression/(-1*a_dict['EX_glc_e'])  +\
@@ -79,7 +112,7 @@ def set_LppHPA( model, ptot, a_dict, pH):
             model.reactions.WZX.flux_expression/( sigma*a_dict['WZX'] )
                
     
-    pHPA = model.problem.Constraint( expression = u_sector - ratio * ( p_sector + u_sector ),
+    pHPA = model.problem.Constraint( expression = u_sector - u_ratio * ( p_sector + u_sector ),
                                                      name = 'pHPA', lb= 0, ub = 0 )
     model.add_cons_vars([ pHPA ])
     return u_sector - ratio * ( p_sector + u_sector )
