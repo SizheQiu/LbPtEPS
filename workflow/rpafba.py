@@ -17,7 +17,7 @@ def init_MRSmedium():
                      'EX_phe_L_e', 'EX_thr_L_e', 'EX_trp_L_e', 'EX_val_L_e', 'EX_ala_L_e', 
                      'EX_arg_L_e', 'EX_asn_L_e', 'EX_asp_L_e', 'EX_cys_L_e', 'EX_gln_L_e', 
                      'EX_glu_L_e', 'EX_gly_e', 'EX_pro_L_e', 'EX_ser_L_e', 'EX_tyr_L_e']:
-        out_medium[k] = 0.2
+        out_medium[k] = 0.2 # maximum amino acid uptake rate
     for EX_m in (vitamins+DNA_materials):
         out_medium[EX_m] = 10
     for EX_m in others:

@@ -2899,13 +2899,6 @@
 "formula":"C6H11O9P"
 },
 {
-"id":"a_gal__D_c",
-"name":"alpha_D_galactose",
-"compartment":"default",
-"charge":0,
-"formula":"X"
-},
-{
 "id":"gal1p_c",
 "name":"alpha-D-Galactose 1-phosphate",
 "compartment":"default",
@@ -8896,29 +8889,18 @@
 "gene_reaction_rule":"lp_2502"
 },
 {
-"id":"GALK2",
+"id":"GALK",
 "name":"galactokinase",
 "metabolites":{
-"a_gal__D_c":-1.0,
-"adp_c":1.0,
-"atp_c":-1.0,
-"gal1p_c":1.0,
-"h_c":1.0
+"adp_c":1,
+"atp_c":-1,
+"gal1p_c":1,
+"gal_c":-1,
+"h_c":1
 },
-"lower_bound":0.0,
+"lower_bound":0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_3482"
-},
-{
-"id":"GALM",
-"name":"aldose 1 epimerase",
-"metabolites":{
-"a_gal__D_c":1.0,
-"gal_c":-1.0
-},
-"lower_bound":-1000.0,
-"upper_bound":1000.0,
-"gene_reaction_rule":"lp_1731 or lp_3487 or lp_0826"
 },
 {
 "id":"GALS3",
@@ -15704,10 +15686,6 @@
 "name":"lp_0822"
 },
 {
-"id":"lp_0826",
-"name":"lp_0826"
-},
-{
 "id":"lp_0829",
 "name":"lp_0829"
 },
@@ -16522,10 +16500,6 @@
 {
 "id":"lp_1730",
 "name":"lp_1730"
-},
-{
-"id":"lp_1731",
-"name":"lp_1731"
 },
 {
 "id":"lp_1732",
@@ -17654,10 +17628,6 @@
 {
 "id":"lp_3486",
 "name":"lp_3486"
-},
-{
-"id":"lp_3487",
-"name":"lp_3487"
 },
 {
 "id":"lp_3491",
