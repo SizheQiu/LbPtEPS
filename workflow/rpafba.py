@@ -24,9 +24,20 @@ def init_MRSmedium():
         out_medium[EX_m] = 1000
     return out_medium
 
-def approx_pH(lac_con, c1, c2):
-    #approximate pH change in lactic acid fermentation
-    return c1*lac_con + c2
+
+def load_model_params(path):
+    table = pd.read_csv(path)
+    params = {'FpHmin':{} }
+    A_table = table[table['Param']=='A'].reset_index().drop(['index'],axis=1)
+    params['A'] = { A_table['Rxn'][i]: float(A_table['Value'][i]) for i in range(len(A_table.index)) }
+    klach_table = table[table['Param']=='klach'].reset_index().drop(['index'],axis=1)
+    params['klach'] = { klach_table['Rxn'][i]: float(klach_table['Value'][i]) for i in range(len(klach_table.index)) }
+    Amin_table = table[table['Param']=='Amin'].reset_index().drop(['index'],axis=1)
+    params['Amin'] = { Amin_table['Rxn'][i]: float(Amin_table['Value'][i]) for i in range(len(Amin_table.index)) }
+    Fmin_table = table[table['Param']=='FpHmin'].reset_index().drop(['index'],axis=1)
+    params['FpHmin'] = { Fmin_table['Rxn'][i]: float(Fmin_table['Value'][i]) for i in range(len(Fmin_table.index)) }
+    return params
+
 
 def approx_pH(x):
     k1=4438.85;k2=7.62;
@@ -45,77 +56,64 @@ def LacIn( v_max,v_min, lac_con, klach ):
 
 
 
-def update_activity(A_dict, pH, lac_con, ApH_table):
+def get_FpH(rxn,  pH, ApH_table, FpHmin_dict):
     #update enzyme acticity based on pH.
-    updated_As = {}
-    lach = lac_con/(10**(pH-3.86))
-    updated_As['GLCpts'] = abs(A_dict['GLCpts'])*exp( -klach*lach )
-    for i in range(len(ApH_table.index)):
-        rxn, func_name, k1,k2 = list(ApH_table.iloc[i])
-        A0=A_dict[rxn]
-        if func_name == 'cubic':
-            updated_As[rxn] = A0 * ( k1*(pH-k2)**3 )
-        else:
-            updated_As[rxn] = A0 * ( 1/(1+np.exp(-k1*(pH-k2))) )
-    return updated_As
+    Fmin = FpHmin_dict[rxn]
+    temp_pd = ApH_table[ApH_table['Enzyme']==rxn].reset_index().drop(['index'],axis=1)
+    rxn, func_name, k1,k2 = list(ApH_table.iloc[0])
+    if func_name == 'cubic':
+        F = k1*(pH-k2)**3
+    else:
+        F = 1/(1+np.exp(-k1*(pH-k2)))
+    return max(F, Fmin)
             
 
-def set_LpPA( model, ptot, params, profile, pH, a_dict, amin_dict ):
+def set_LpPA( model, ptot, params, lac_con, pH, ApH_table ):
     sigma = 0.5
-    klach = params['klach']
-    #update LacH inhbition on carbon source uptake
-    lac_con = profile['lac_D_e']
-    A_GLCpts = LacIn( a_dict['GLCpts'], amin_dict['GLCpts'], lac_con, klach )
-    A_MANpts = LacIn( a_dict['MANpts'],amin_dict['MANpts'], lac_con, klach )
-    A_LCTSt = LacIn( a_dict['LCTSt'],amin_dict['LCTSt'], lac_con, klach )
-    # A and T sectors
-    expr = model.reactions.biomass_LPL60.flux_expression/a_dict['biomass_LPL60'] +\
-           model.reactions.GLCpts.flux_expression/(-1*A_GLCpts)  +\
-           model.reactions.MANpts.flux_expression/(-1*A_MANpts) +\
-           model.reactions.LCTSt.flux_expression/(-1*A_LCTSt) +\
-           model.reactions.EX_ac_e.flux_expression/(sigma*a_dict['EX_ac_e']) + \
-           model.reactions.EX_lac_L_e.flux_expression/(sigma*a_dict['EX_lac_L_e']) +\
-           model.reactions.EX_lac_D_e.flux_expression/(sigma*a_dict['EX_lac_D_e'])
-    # C and U sectors     
-    for k in a_dict.keys():
-        if ( 'EX_' not in k ) and ( 'biomass' not in k ):
-            expr = expr + model.reactions.get_by_id(k).flux_expression/( sigma*a_dict[k] )
-              
-    PA = model.problem.Constraint( expression = expr,name = 'PA', lb= 0, ub = 0.5*ptot)
-    model.add_cons_vars([ PA ])
-    
-    return expr
-
-def set_LppHPA( model, ptot, params, profile, pH, a_dict, amin_dict ):
-    sigma=0.5
+    #compute u%
     r0, r1, kpH, k1 = 0.0876, 0.07953, 44.9457 , 5.0344;
     u_ratio= r0+r1/( 1+np.exp(kpH*(pH-k1)) )
     
-    klach = params['klach']
+    A_dict = params['A']
+    klachs = params['klach']
+    Amin_dict = params['Amin']
+    FpHmin_dict = params['FpHmin'] 
     #update LacH inhbition on carbon source uptake
-    lac_con = profile['lac_D_e']
-    A_GLCpts = LacIn( a_dict['GLCpts'], amin_dict['GLCpts'], lac_con, klach )
-    A_MANpts = LacIn( a_dict['MANpts'],amin_dict['MANpts'], lac_con, klach )
-    A_LCTSt = LacIn( a_dict['LCTSt'],amin_dict['LCTSt'], lac_con, klach )
-    
-    p_sector=model.reactions.biomass_LPL60.flux_expression/a_dict['biomass_LPL60'] +\
-           model.reactions.EX_glc_e.flux_expression/(-1*a_dict['EX_glc_e'])  +\
-           model.reactions.EX_ac_e.flux_expression/(sigma*a_dict['EX_ac_e']) + \
-           model.reactions.EX_lac_L_e.flux_expression/(sigma*a_dict['EX_lac_L_e'])
-    
+    A_GLCpts = LacIn( A_dict['GLCpts'], Amin_dict['GLCpts'], lac_con, klachs['GLCpts'] )
+    A_MANpts = LacIn( A_dict['MANpts'], Amin_dict['MANpts'], lac_con, klachs['MANpts'] )
+    A_LCTSt = LacIn( A_dict['LCTSt'], Amin_dict['LCTSt'], lac_con, klachs['LCTSt'] )
+    # A and T sectors
+    p_sector = model.reactions.biomass_LPL60.flux_expression/A_dict['biomass_LPL60'] +\
+           model.reactions.GLCpts.flux_expression/A_GLCpts  +\
+           model.reactions.MANpts.flux_expression/A_MANpts +\
+           model.reactions.LCTSt.flux_expression/A_LCTSt +\
+           model.reactions.EX_ac_e.flux_expression/(sigma*A_dict['EX_ac_e']) + \
+           model.reactions.EX_lac_L_e.flux_expression/(sigma*A_dict['EX_lac_L_e']) +\
+           model.reactions.EX_lac_D_e.flux_expression/(sigma*A_dict['EX_lac_D_e'])
+    # C sector 
     for k in a_dict.keys():
-        p_sector = p_sector + model.reactions.get_by_id(k).flux_expression/( sigma*a_dict[k] )
-        
-    u_sector= model.reactions.MANT_EPS.flux_expression/( sigma*a_dict['MANT_EPS'] ) +\
-            model.reactions.GLCT_EPS.flux_expression/( sigma*a_dict['GLCT_EPS'] ) +\
-            model.reactions.GALT_EPS.flux_expression/( sigma*a_dict['GALT_EPS'] )+\
-            model.reactions.WZX.flux_expression/( sigma*a_dict['WZX'] )
-               
+        if k not in ['EX_ac_e','EX_lac_L_e', 'EX_lac_D_e','biomass_LPL60', 'GLCpts','MANpts','LCTSt',\
+                     'MANT_EPS', 'GLCT_EPS', 'GALT_EPS', 'WZX']:
+            if k in FpHmin_dict.keys():
+                F = get_FpH( k, pH, ApH_table, FpHmin_dict) # add pH inhibition on A
+                p_sector  = p_sector  + model.reactions.get_by_id(k).flux_expression/( sigma*F*A_dict[k] )
+            else:
+                p_sector  = p_sector  + model.reactions.get_by_id(k).flux_expression/( sigma*A_dict[k] )
+            
+    # U sector
+    F_GT = get_FpH( 'GT', pH, ApH_table, FpHmin_dict)
+    u_sector= model.reactions.MANT_EPS.flux_expression/( sigma*F_GT*A_dict['MANT_EPS'] ) +\
+            model.reactions.GLCT_EPS.flux_expression/( sigma*F_GT*A_dict['GLCT_EPS'] ) +\
+            model.reactions.GALT_EPS.flux_expression/( sigma*F_GT*A_dict['GALT_EPS'] )+\
+            model.reactions.WZX.flux_expression/( sigma*A_dict['WZX'] )
+              
+    PA = model.problem.Constraint( expression = p_sector + u_sector ,name = 'PA', lb= 0, ub = 0.5*ptot)
+    pHrPA = model.problem.Constraint( expression = u_sector - u_ratio * ( p_sector + u_sector ),
+                                                     name = 'pHrPA', lb= 0, ub = 0 )
     
-    pHPA = model.problem.Constraint( expression = u_sector - u_ratio * ( p_sector + u_sector ),
-                                                     name = 'pHPA', lb= 0, ub = 0 )
-    model.add_cons_vars([ pHPA ])
-    return u_sector - ratio * ( p_sector + u_sector )
+    model.add_cons_vars([ PA, pHrPA ])
+    
+    return p_sector, u_sector
 
 
 

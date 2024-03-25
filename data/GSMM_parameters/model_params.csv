@@ -1,0 +1,75 @@
+﻿RXN,Param,Unit,Value
+ENO,FpHmin,_,0.5
+FDPA,FpHmin,_,0.5
+GAPD,FpHmin,_,0.5
+MANT_EPS,FpHmin,_,0.5
+GLCT_EPS,FpHmin,_,0.5
+GALT_EPS,FpHmin,_,0.5
+HEX1,FpHmin,_,0.5
+GALK,FpHmin,_,0.5
+LACZ,FpHmin,_,0.5
+LDH_L,FpHmin,_,0.5
+LDH_D,FpHmin,_,0.5
+MAN6PI_for,FpHmin,_,0.5
+MAN6PI_rev,FpHmin,_,0.5
+PFK,FpHmin,_,0.5
+PGI_for,FpHmin,_,0.5
+PGI_rev,FpHmin,_,0.5
+PGK,FpHmin,_,0.5
+PGM,FpHmin,_,0.5
+PGMT,FpHmin,_,0.5
+PYK,FpHmin,_,0.5
+LCTSst,Amin,mmol/(g E·h),10
+MANpts,Amin,mmol/(g E·h),10
+GLCpts,Amin,mmol/(g E·h),10
+LCTSst,klach,1/mM,0.1
+MANpts,klach,1/mM,0.1
+GLCpts,klach,1/mM,0.1
+EX_ac_e,A,mmol/(g E·h),
+EX_lac_L_e,A,mmol/(g E·h),
+EX_lac_D_e,A,mmol/(g E·h),
+LCTSt,A,mmol/(g E·h),
+LACZ,A,mmol/(g E·h),
+GALK,A,mmol/(g E·h),
+GALT,A,mmol/(g E·h),
+MANpts,A,mmol/(g E·h),
+GLCpts,A,mmol/(g E·h),
+HEX1,A,mmol/(g E·h),
+G6PDH2r,A,mmol/(g E·h),
+PGL,A,mmol/(g E·h),
+GND,A,mmol/(g E·h),
+RPE_for,A,mmol/(g E·h),
+RPE_rev,A,mmol/(g E·h),
+RPI_for,A,mmol/(g E·h),
+RPI_rev,A,mmol/(g E·h),
+PGI_for,A,mmol/(g E·h),
+PGI_rev,A,mmol/(g E·h),
+PFK,A,mmol/(g E·h),
+FBA,A,mmol/(g E·h),
+GAPD,A,mmol/(g E·h),
+PGK,A,mmol/(g E·h),
+PGM,A,mmol/(g E·h),
+ENO,A,mmol/(g E·h),
+PYK,A,mmol/(g E·h),
+LDH_L,A,mmol/(g E·h),
+LDH_D,A,mmol/(g E·h),
+PFL,A,mmol/(g E·h),
+PDH,A,mmol/(g E·h),
+PTAr,A,mmol/(g E·h),
+ACKr,A,mmol/(g E·h),
+ACCOAC,A,mmol/(g E·h),
+PGMT,A,mmol/(g E·h),
+UDPG4E_rev,A,mmol/(g E·h),
+UDPG4E_for,A,mmol/(g E·h),
+GALU,A,mmol/(g E·h),
+MAN6PI_for,A,mmol/(g E·h),
+MAN6PI_rev,A,mmol/(g E·h),
+PMANM,A,mmol/(g E·h),
+MAN1PT,A,mmol/(g E·h),
+MANT_EPS,A,mmol/(g E·h),
+MANT_EPS,A,mmol/(g E·h),
+GLCT_EPS,A,mmol/(g E·h),
+GALT_EPS,A,mmol/(g E·h),
+GALT_EPS,A,mmol/(g E·h),
+WZX,A,mmol/(g E·h),
+biomass_LPL60,A,mmol/(g E·h),
