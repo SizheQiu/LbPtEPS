@@ -5008,14 +5008,14 @@
 "id":"ACALD",
 "name":"acetaldehyde dehydrogenase acetylating",
 "metabolites":{
-"acald_c":-1.0,
-"accoa_c":1.0,
-"coa_c":-1.0,
-"h_c":1.0,
-"nad_c":-1.0,
-"nadh_c":1.0
+"acald_c":1,
+"accoa_c":-1,
+"coa_c":1,
+"h_c":-1,
+"nad_c":1,
+"nadh_c":-1
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_3662 or lp_0329"
 },
@@ -5697,13 +5697,13 @@
 "id":"ALCD2x",
 "name":"alcohol dehydrogenase ethanol NAD",
 "metabolites":{
-"acald_c":1.0,
-"etoh_c":-1.0,
-"h_c":1.0,
-"nad_c":-1.0,
-"nadh_c":1.0
+"acald_c":-1,
+"etoh_c":1,
+"h_c":-1,
+"nad_c":1,
+"nadh_c":-1
 },
-"lower_bound":-1000.0,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":"lp_2873 or lp_1665 or lp_3662"
 },
@@ -6170,7 +6170,7 @@
 "h_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":8.43,
+"lower_bound":0.0,
 "upper_bound":1000.0,
 "gene_reaction_rule":""
 },

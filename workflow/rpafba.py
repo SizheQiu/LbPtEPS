@@ -2,6 +2,8 @@ import cobra
 from cobra.io import read_sbml_model
 from cobra import Model, Reaction, Metabolite
 import numpy as np
+import pandas as pd
+from math import exp
 '''
 Regulatory proteome constrained flux balance analysis of L.plantarum
 '''
@@ -29,13 +31,13 @@ def load_model_params(path):
     table = pd.read_csv(path)
     params = {'FpHmin':{} }
     A_table = table[table['Param']=='A'].reset_index().drop(['index'],axis=1)
-    params['A'] = { A_table['Rxn'][i]: float(A_table['Value'][i]) for i in range(len(A_table.index)) }
+    params['A'] = { A_table['RXN'][i]: float(A_table['Value'][i]) for i in range(len(A_table.index)) }
     klach_table = table[table['Param']=='klach'].reset_index().drop(['index'],axis=1)
-    params['klach'] = { klach_table['Rxn'][i]: float(klach_table['Value'][i]) for i in range(len(klach_table.index)) }
+    params['klach'] = { klach_table['RXN'][i]: float(klach_table['Value'][i]) for i in range(len(klach_table.index)) }
     Amin_table = table[table['Param']=='Amin'].reset_index().drop(['index'],axis=1)
-    params['Amin'] = { Amin_table['Rxn'][i]: float(Amin_table['Value'][i]) for i in range(len(Amin_table.index)) }
+    params['Amin'] = { Amin_table['RXN'][i]: float(Amin_table['Value'][i]) for i in range(len(Amin_table.index)) }
     Fmin_table = table[table['Param']=='FpHmin'].reset_index().drop(['index'],axis=1)
-    params['FpHmin'] = { Fmin_table['Rxn'][i]: float(Fmin_table['Value'][i]) for i in range(len(Fmin_table.index)) }
+    params['FpHmin'] = list(Fmin_table['Value'])[0]
     return params
 
 
@@ -56,16 +58,20 @@ def LacIn( v_max,v_min, lac_con, klach ):
 
 
 
-def get_FpH(rxn,  pH, ApH_table, FpHmin_dict):
+def get_FpH(rxn,  pH, ApH_table, FpHmin ):
     #update enzyme acticity based on pH.
-    Fmin = FpHmin_dict[rxn]
     temp_pd = ApH_table[ApH_table['Enzyme']==rxn].reset_index().drop(['index'],axis=1)
     rxn, func_name, k1,k2 = list(ApH_table.iloc[0])
     if func_name == 'cubic':
         F = k1*(pH-k2)**3
     else:
         F = 1/(1+np.exp(-k1*(pH-k2)))
-    return max(F, Fmin)
+    return max(F, FpHmin)
+
+def get_FpH_GT(pH):
+    a,b,c=-0.3815,4.2847,-11.0359
+    return max(a*pH**2+b*pH+c,0)
+    
             
 
 def set_LpPA( model, ptot, params, lac_con, pH, ApH_table ):
@@ -77,7 +83,7 @@ def set_LpPA( model, ptot, params, lac_con, pH, ApH_table ):
     A_dict = params['A']
     klachs = params['klach']
     Amin_dict = params['Amin']
-    FpHmin_dict = params['FpHmin'] 
+    FpHmin = params['FpHmin'] 
     #update LacH inhbition on carbon source uptake
     A_GLCpts = LacIn( A_dict['GLCpts'], Amin_dict['GLCpts'], lac_con, klachs['GLCpts'] )
     A_MANpts = LacIn( A_dict['MANpts'], Amin_dict['MANpts'], lac_con, klachs['MANpts'] )
@@ -91,17 +97,17 @@ def set_LpPA( model, ptot, params, lac_con, pH, ApH_table ):
            model.reactions.EX_lac_L_e.flux_expression/(sigma*A_dict['EX_lac_L_e']) +\
            model.reactions.EX_lac_D_e.flux_expression/(sigma*A_dict['EX_lac_D_e'])
     # C sector 
-    for k in a_dict.keys():
+    for k in A_dict.keys():
         if k not in ['EX_ac_e','EX_lac_L_e', 'EX_lac_D_e','biomass_LPL60', 'GLCpts','MANpts','LCTSt',\
                      'MANT_EPS', 'GLCT_EPS', 'GALT_EPS', 'WZX']:
-            if k in FpHmin_dict.keys():
-                F = get_FpH( k, pH, ApH_table, FpHmin_dict) # add pH inhibition on A
+            if k in list(ApH_table['Enzyme']):
+                F = get_FpH( k, pH, ApH_table, FpHmin ) # add pH inhibition on A
                 p_sector  = p_sector  + model.reactions.get_by_id(k).flux_expression/( sigma*F*A_dict[k] )
             else:
                 p_sector  = p_sector  + model.reactions.get_by_id(k).flux_expression/( sigma*A_dict[k] )
             
     # U sector
-    F_GT = get_FpH( 'GT', pH, ApH_table, FpHmin_dict)
+    F_GT = get_FpH_GT(pH)
     u_sector= model.reactions.MANT_EPS.flux_expression/( sigma*F_GT*A_dict['MANT_EPS'] ) +\
             model.reactions.GLCT_EPS.flux_expression/( sigma*F_GT*A_dict['GLCT_EPS'] ) +\
             model.reactions.GALT_EPS.flux_expression/( sigma*F_GT*A_dict['GALT_EPS'] )+\

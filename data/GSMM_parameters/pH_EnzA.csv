@@ -1,8 +1,8 @@
 Enzyme,func_name,k1,k2
+ACALD,cubic,0.0007,-4.0476
 ENO,sigmoid,2.8696,6.2766
 FDPA,sigmoid,3.5971,6.1339
 GAPD,cubic,0.212,4.7383
-GT,sigmoid,1.3175,5.5917
 HEX,sigmoid,2.1451,6.2763
 LACZ,sigmoid,1.0604,5.0921
 LDH,sigmoid,4.5132,5.6809
