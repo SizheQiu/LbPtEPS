@@ -3,11 +3,10 @@ _,FpHmin,_,0.5
 LCTSt,Amin,mmol/(g E·h),10
 MANpts,Amin,mmol/(g E·h),10
 GLCpts,Amin,mmol/(g E·h),10
-LCTSt,klach,1/mM,0.1
-MANpts,klach,1/mM,0.1
-GLCpts,klach,1/mM,0.1
+LCTSt,klach,1/mM,0.2
+MANpts,klach,1/mM,0.2
+GLCpts,klach,1/mM,0.2
 EX_ac_e,A,mmol/(g E·h),6360
-EX_for_e,A,mmol/(g E·h),6360
 EX_lac_L_e,A,mmol/(g E·h),6360
 EX_lac_D_e,A,mmol/(g E·h),6360
 LCTSt,A,mmol/(g E·h),540
@@ -37,7 +36,7 @@ LDH_L,A,mmol/(g E·h),141000
 LDH_D,A,mmol/(g E·h),126000
 ACALD,A,mmol/(g E·h),2916
 ALCD2x,A,mmol/(g E·h),11451.6
-PFL,A,mmol/(g E·h),9600
+PFL,A,mmol/(g E·h),720
 PDH,A,mmol/(g E·h),1500
 PTAr,A,mmol/(g E·h),428400
 ACKr,A,mmol/(g E·h),65220
@@ -50,8 +49,8 @@ MAN6PI_for,A,mmol/(g E·h),270
 MAN6PI_rev,A,mmol/(g E·h),639.7952655
 PMANM,A,mmol/(g E·h),82.998
 MAN1PT,A,mmol/(g E·h),144
-MANT_EPS,A,mmol/(g E·h),119.5918
-GLCT_EPS,A,mmol/(g E·h),119.5918
-GALT_EPS,A,mmol/(g E·h),119.5918
+MANT_EPS,A,mmol/(g E·h),268.98
+GLCT_EPS,A,mmol/(g E·h),268.98
+GALT_EPS,A,mmol/(g E·h),268.98
 WZX,A,mmol/(g E·h),37.44
 biomass_LPL60,A,mmol/(g E·h),107.4

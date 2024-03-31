@@ -8,9 +8,3 @@ PGK,sigmoid,2.6758,5.1807
 PGM,sigmoid,5.4667,5.0772
 PYK,cubic,0.1545,4.6157
 HEX1,sigmoid,2.1451,6.2763
-GALK,sigmoid,2.1451,6.2763
-PGI_for,sigmoid,3.2329,5.9007
-PGI_rev,sigmoid,3.2329,5.9007
-MAN6PI_for,cubic,0.0037,0.998
-MAN6PI_rev,cubic,0.0037,0.998
-PGMT,sigmoid,5.4667,5.0772

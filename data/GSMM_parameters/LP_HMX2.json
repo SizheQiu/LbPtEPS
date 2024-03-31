@@ -5122,7 +5122,7 @@
 "atp_c":1
 },
 "lower_bound":0.0,
-"upper_bound":1000.0,
+"upper_bound":0.0,
 "gene_reaction_rule":"lp_2242 or lp_0210 or lp_0310"
 },
 {
