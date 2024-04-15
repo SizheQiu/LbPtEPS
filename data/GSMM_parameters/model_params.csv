@@ -49,8 +49,8 @@ MAN6PI_for,A,mmol/(g E·h),270
 MAN6PI_rev,A,mmol/(g E·h),639.7952655
 PMANM,A,mmol/(g E·h),82.998
 MAN1PT,A,mmol/(g E·h),144
-MANT_EPS,A,mmol/(g E·h),268.98
-GLCT_EPS,A,mmol/(g E·h),268.98
-GALT_EPS,A,mmol/(g E·h),268.98
+MANT_EPS,A,mmol/(g E·h),250.61
+GLCT_EPS,A,mmol/(g E·h),250.61
+GALT_EPS,A,mmol/(g E·h),250.61
 WZX,A,mmol/(g E·h),37.44
 biomass_LPL60,A,mmol/(g E·h),107.4

@@ -5,11 +5,14 @@ import numpy as np
 import pandas as pd
 from math import exp
 '''
-Regulatory proteome constrained flux balance analysis of L.plantarum
+Regulatory proteome constrained flux balance analysis of L.plantarum.
 '''
 
 
 def init_MRSmedium():
+    '''
+    Initailzie MRS medium composition for FBA.
+    '''
     out_medium = {}
     vitamins = ['EX_btn_e','EX_pnto_R_e', 'EX_ribflv_e', 'EX_thm_e', 'EX_fol_e', 'EX_nac_e','EX_pydam_e']
     DNA_materials = ['EX_ade_e', 'EX_gua_e', 'EX_xan_e', 'EX_ura_e','EX_thymd_e', 'EX_for_e']
@@ -28,6 +31,9 @@ def init_MRSmedium():
 
 
 def load_model_params(path):
+    '''
+    Load parameters for proteome constrained FBA.
+    '''
     table = pd.read_csv(path)
     params = {'FpHmin':{} }
     A_table = table[table['Param']=='A'].reset_index().drop(['index'],axis=1)
@@ -41,23 +47,22 @@ def load_model_params(path):
     return params
 
 
-def approx_pH(x):
-    k1=4438.85;k2=7.62;
-    #approximate pH change in MRS medium
-    return np.log(k1/(x+k2) )
+# def approx_pH(x):
+#     k1=4438.85;k2=7.62;
+#     #approximate pH change in MRS medium
+#     return np.log(k1/(x+k2) )
 
-def LacIn( v_max,v_min, lac_con, pH, klach ):
-    lach = lac_con/(10**(pH-3.86))
-    temp_value = abs(v_max)*exp( -klach*lach )
-    if v_max > 0:
-        out = max(temp_value, abs(v_min) )
-    else:
-        out = -1*max( temp_value, abs(v_min) )
-    return out
+# def LacIn( v_max,v_min, lac_con, pH, klach ):
+#     lach = lac_con/(10**(pH-3.86))
+#     temp_value = abs(v_max)*exp( -klach*lach )
+#     if v_max > 0:
+#         out = max(temp_value, abs(v_min) )
+#     else:
+#         out = -1*max( temp_value, abs(v_min) )
+#     return out
 
-
-def get_FLacIn( lac_con, pH, klach ):
-    lach = lac_con/(10**(pH-3.86))
+# def get_FLacIn( lac_con, pH, klach ):
+#     lach = lac_con/(10**(pH-3.86))
     
     
 
@@ -81,23 +86,31 @@ def get_FpH_GT(pH):
    
             
 
-def set_LpPA( model, ptot, params, lac_con, pH ):
+def set_LpPA( model, ptot, params, pH ):
+    '''
+    Set proteomic constraints.
+    model: cobra model.
+    ptot: total mass of proteins in 1 gram of dry weight biomass.
+    params: parameters loaded using load_model_params(path)
+    pH: the pH value.
+    '''
     #compute the u/(a+c) ratio
     r0, r1, kpH, k1 = 0.0983, 0.1096, 44.6016, 5.0320;
     u_ratio= r0+r1/( 1+np.exp(kpH*(pH-k1)) )
     
     A_dict = params['A']
-    klachs = params['klach']
+#     klachs = params['klach']
     Amin_dict = params['Amin']
-    #update LacH inhbition on carbon source uptake
-    A_GLCpts = LacIn( A_dict['GLCpts'], Amin_dict['GLCpts'], lac_con, pH, klachs['GLCpts'] )
-    A_MANpts = LacIn( A_dict['MANpts'], Amin_dict['MANpts'], lac_con, pH, klachs['MANpts'] )
-    A_LCTSt = LacIn( A_dict['LCTSt'], Amin_dict['LCTSt'], lac_con, pH, klachs['LCTSt'] )
+    
+#     A_GLCpts = LacIn( A_dict['GLCpts'], Amin_dict['GLCpts'], lac_con, pH, klachs['GLCpts'] )
+#     A_MANpts = LacIn( A_dict['MANpts'], Amin_dict['MANpts'], lac_con, pH, klachs['MANpts'] )
+#     A_LCTSt = LacIn( A_dict['LCTSt'], Amin_dict['LCTSt'], lac_con, pH, klachs['LCTSt'] )
+
     FpH = get_FpH_rxn(pH)
     # T sector
-    t_sector = model.reactions.GLCpts.flux_expression/A_GLCpts  +\
-           model.reactions.MANpts.flux_expression/A_MANpts +\
-           model.reactions.LCTSt.flux_expression/A_LCTSt +\
+    t_sector = model.reactions.GLCpts.flux_expression/( FpH*A_dict['GLCpts'] )  +\
+           model.reactions.MANpts.flux_expression/( FpH*A_dict['MANpts'] ) +\
+           model.reactions.LCTSt.flux_expression/( FpH*A_dict['LCTSt']) +\
            model.reactions.EX_ac_e.flux_expression/(FpH*A_dict['EX_ac_e']) + \
            model.reactions.EX_lac_L_e.flux_expression/(FpH*A_dict['EX_lac_L_e']) +\
            model.reactions.EX_lac_D_e.flux_expression/(FpH*A_dict['EX_lac_D_e'])
