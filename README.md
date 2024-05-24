@@ -5,6 +5,14 @@
 2. Metabolomic analysis: Metabolomics.ipynb
 3. Differential protein expression analysis: DEG_proteomics.ipynb
 4. Analysis of proteome resource allocation under acid stress: ResourceAllocation.ipynb
+### Data
+1. [Whole genome sequence of L. plantarum HMX2](https://github.com/SizheQiu/LbPtEPS/blob/main/data/Genome_HMX2/genome_hmx2.fa)
+2. [Protein sequences of L. plantarum HMX2](https://github.com/SizheQiu/LbPtEPS/blob/main/data/Genome_HMX2/protein_hmx2.fa)
+3. [Functional annotations of coding genes](https://github.com/SizheQiu/LbPtEPS/blob/main/data/Genome_HMX2/hmx2_annotation.csv)
+4. [EPS biosynthetic gene cluster of L. plantarum HMX2](https://github.com/SizheQiu/LbPtEPS/blob/main/data/Genome_HMX2/BGC_EPS.gbk)
+5. [Quantitaive proteomic data](https://github.com/SizheQiu/LbPtEPS/blob/main/data/Proteomics/Proteomics_B.xlsx)
+6. [Extra-cellular metabolomic data](https://github.com/SizheQiu/LbPtEPS/blob/main/data/Exp_data/Metabolomics_mM.csv)
+7. [Intra-cellular metabolomic data](https://github.com/SizheQiu/LbPtEPS/blob/main/data/Exp_data/IntraMetabolomics.csv)
 ### Dependencies
 1. antiSMASH: https://antismash.secondarymetabolites.org/
 2. Biopython: https://biopython.org/
