@@ -30,6 +30,5 @@
 1. COBRApy: https://github.com/opencobra/cobrapy
 2. DLTKcat: https://github.com/SizheQiu/DLTKcat.git
 3. Scikit-learn: https://scikit-learn.org/
-
 ## Citation
-Sizhe Qiu, Aidong Yang, Xinyu Yang, Wenlu Li, Hong Zeng, Yanbo Wang. Proteome trade-off between primary and secondary metabolism shapes acid stress induced bacterial exopolysaccharide production. https://doi.org/10.1101/2024.04.19.590233
+Qiu, S., Yang, A., Yang, X., Ni, H., Li, W., Yang, Z., Zeng, H., & Wang, Y. (2025). Proteome trade-off between primary and secondary metabolism shapes acid stress induced bacterial exopolysaccharide production. Metabolic Engineering. https://doi.org/10.1016/j.ymben.2025.05.002 
